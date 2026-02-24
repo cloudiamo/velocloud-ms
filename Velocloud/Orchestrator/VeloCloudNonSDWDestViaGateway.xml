@@ -1,0 +1,1524 @@
+<ObjectDefinition>
+  <information>
+    <icon>none</icon>
+    <description></description>
+    <displayField>object_id</displayField>
+    <order>0</order>
+    <visibility/>
+    <wfConstraintsPath></wfConstraintsPath>
+    <configType>json</configType>
+    <createTemplateId></createTemplateId>
+    <createTemplateObject></createTemplateObject>
+    <defaultDisplay>false</defaultDisplay>
+    <dynamic>false</dynamic>
+    <importIfMandatoryPresent>false</importIfMandatoryPresent>
+    <maxInstances>0</maxInstances>
+    <relatedObjects></relatedObjects>
+    <retainIfImportIsEmpty>false</retainIfImportIsEmpty>
+    <name>VeloCloudNonSDWDestViaGateway</name>
+    <group>Default</group>
+    <importonce>false</importonce>
+    <importrank>0</importrank>
+    <reorderinstances>false</reorderinstances>
+    <sortascending>false</sortascending>
+    <sortauto>false</sortauto>
+    <sortnumerical>false</sortnumerical>
+    <sortvariable>params._order</sortvariable>
+  </information>
+  <variables frozen="0">
+    <variable displayName="id" name="params.object_id" startIncrement="0" type="AutoIncrement" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="1" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Name" name="params.name" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Type" name="params.type" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="dataCenter" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <values/>
+    </variable>
+    <variable displayName="Tunnel Mode" name="params.tunnelMode" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="ACTIVE_HOT_STANDBY" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <values>
+        <values displayValue="ACTIVE HOT STANDBY">ACTIVE_HOT_STANDBY</values>
+        <values displayValue="ACTIVE  ACTIVE">ACTIVE_ACTIVE</values>
+      </values>
+    </variable>
+    <variable displayName="Status" name="params.status" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Auth Type" name="params.authtype" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="|" groupDisplayName="" maxLength="100" displayOrder="4" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <values>
+        <values displayValue="FQDN">FQDN</values>
+        <values displayValue="Default">&quot;&quot;</values>
+        <values displayValue="User FQDN">USER_FQDN</values>
+        <values displayValue="IPv4">IPv4</values>
+        <values displayValue="IPv6">IPv6</values>
+      </values>
+    </variable>
+    <variable displayName="Auth Key" name="params.authkey" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="gateway" name="params.vpnGateways.0.gateway" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Gateway</sections>
+      </sections>
+    </variable>
+    <variable displayName="Gateway Type" name="params.gatewaytype" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="|" groupDisplayName="" maxLength="100" displayOrder="16" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" validationRegex="" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="GenericIKEv2Router" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Gateway</sections>
+      </sections>
+      <values>
+        <values displayValue="GenericIKEv2Router">GenericIKEv2Router</values>
+        <values displayValue="AWS VPN Gateway">AWS VPN Gateway</values>
+        <values displayValue="CheckPoint">CheckPoint</values>
+        <values displayValue="Cisco ASA">Cisco ASA</values>
+        <values displayValue="Cisco ISR">Cisco ISR</values>
+        <values displayValue="Microsoft Azure Virtual Hub">Microsoft Azure Virtual Hub</values>
+        <values displayValue="Palo Alto">Palo Alto</values>
+        <values displayValue="SonicWall">SonicWall</values>
+        <values displayValue="Zscaler">Zscaler</values>
+        <values displayValue="Other">Other</values>
+        <values displayValue="11: Generic Policy">Generic Policy</values>
+      </values>
+    </variable>
+    <variable displayName="Primary IP" name="params.primaryIP" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Primary</sections>
+      </sections>
+    </variable>
+    <variable displayName="Primary Type" name="params.primarytype" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Primary</sections>
+      </sections>
+    </variable>
+    <variable displayName="Secondary IP" name="params.secondaryIP" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Secondary</sections>
+      </sections>
+    </variable>
+    <variable displayName="Secondary Type" name="params.secondarytype" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Secondary</sections>
+      </sections>
+    </variable>
+    <variable displayName="Gateway Public IP" name="params.gatewayPublicIp" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections/>
+    </variable>
+    <variable displayName="Redundant Gateway Public IP" name="params.redundantgatewayPublicIp" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Alerts Enabled" name="params.alertsEnabled" startIncrement="0" type="Boolean" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Profile Count" name="params.profileCount" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="true" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="1" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="algo" name="params.algo" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="|" groupDisplayName="" maxLength="100" displayOrder="17" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="hashParams" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="datacenterVersion" name="params.datacenterVersion" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+  </variables>
+  <example>
+    <content>[
+    {
+      &quot;id&quot;: 1099,
+      &quot;created&quot;: &quot;2026-02-16T12:24:03.000Z&quot;,
+      &quot;operatorId&quot;: null,
+      &quot;networkId&quot;: null,
+      &quot;enterpriseId&quot;: 71,
+      &quot;edgeId&quot;: null,
+      &quot;gatewayId&quot;: null,
+      &quot;parentGroupId&quot;: null,
+      &quot;description&quot;: null,
+      &quot;object&quot;: &quot;NETWORK_SERVICE&quot;,
+      &quot;name&quot;: &quot;OpenDNS&quot;,
+      &quot;type&quot;: &quot;dns&quot;,
+      &quot;logicalId&quot;: &quot;80d3407f-9637-4042-9eb0-0aa9268709ed&quot;,
+      &quot;alertsEnabled&quot;: 1,
+      &quot;operatorAlertsEnabled&quot;: 1,
+      &quot;status&quot;: null,
+      &quot;statusModified&quot;: &quot;0000-00-00 00:00:00&quot;,
+      &quot;previousData&quot;: null,
+      &quot;previousCreated&quot;: &quot;0000-00-00 00:00:00&quot;,
+      &quot;draftData&quot;: null,
+      &quot;draftCreated&quot;: &quot;0000-00-00 00:00:00&quot;,
+      &quot;draftComment&quot;: null,
+      &quot;data&quot;: {
+        &quot;primary&quot;: &quot;208.67.222.222&quot;,
+        &quot;secondary&quot;: &quot;208.67.220.220&quot;,
+        &quot;ipv4Servers&quot;: [
+          &quot;208.67.222.222&quot;,
+          &quot;208.67.220.220&quot;
+        ],
+        &quot;ipv6Servers&quot;: [
+          &quot;2620:119:35::35&quot;,
+          &quot;2620:119:53::53&quot;
+        ]
+      },
+      &quot;lastContact&quot;: &quot;0000-00-00 00:00:00&quot;,
+      &quot;version&quot;: &quot;0&quot;,
+      &quot;modified&quot;: &quot;2026-02-16T12:24:04.000Z&quot;,
+      &quot;profileCount&quot;: 0,
+      &quot;edgeUsage&quot;: [],
+      &quot;edgeCount&quot;: 0,
+      &quot;edgeQOSUsage&quot;: [],
+      &quot;configuration&quot;: [],
+      &quot;groupCount&quot;: 0,
+      &quot;gateways&quot;: []
+    },
+    {
+      &quot;id&quot;: 1100,
+      &quot;created&quot;: &quot;2026-02-16T12:24:03.000Z&quot;,
+      &quot;operatorId&quot;: null,
+      &quot;networkId&quot;: null,
+      &quot;enterpriseId&quot;: 71,
+      &quot;edgeId&quot;: null,
+      &quot;gatewayId&quot;: null,
+      &quot;parentGroupId&quot;: null,
+      &quot;description&quot;: null,
+      &quot;object&quot;: &quot;NETWORK_SERVICE&quot;,
+      &quot;name&quot;: &quot;Google&quot;,
+      &quot;type&quot;: &quot;dns&quot;,
+      &quot;logicalId&quot;: &quot;b5dc25e7-6e80-4e0e-8764-5ce814535a7b&quot;,
+      &quot;alertsEnabled&quot;: 1,
+      &quot;operatorAlertsEnabled&quot;: 1,
+      &quot;status&quot;: null,
+      &quot;statusModified&quot;: &quot;0000-00-00 00:00:00&quot;,
+      &quot;previousData&quot;: null,
+      &quot;previousCreated&quot;: &quot;0000-00-00 00:00:00&quot;,
+      &quot;draftData&quot;: null,
+      &quot;draftCreated&quot;: &quot;0000-00-00 00:00:00&quot;,
+      &quot;draftComment&quot;: null,
+      &quot;data&quot;: {
+        &quot;primary&quot;: &quot;8.8.8.8&quot;,
+        &quot;secondary&quot;: &quot;8.8.4.4&quot;,
+        &quot;ipv4Servers&quot;: [
+          &quot;8.8.8.8&quot;,
+          &quot;8.8.4.4&quot;
+        ],
+        &quot;ipv6Servers&quot;: [
+          &quot;2001:4860:4860::8888&quot;,
+          &quot;2001:4860:4860::8844&quot;
+        ]
+      },
+      &quot;lastContact&quot;: &quot;0000-00-00 00:00:00&quot;,
+      &quot;version&quot;: &quot;0&quot;,
+      &quot;modified&quot;: &quot;2026-02-16T12:24:04.000Z&quot;,
+      &quot;profileCount&quot;: 1,
+      &quot;edgeUsage&quot;: [],
+      &quot;edgeCount&quot;: 0,
+      &quot;edgeQOSUsage&quot;: [],
+      &quot;configuration&quot;: [
+        {
+          &quot;enterpriseObjectId&quot;: 1100,
+          &quot;id&quot;: 473,
+          &quot;created&quot;: &quot;2026-02-16T12:24:03.000Z&quot;,
+          &quot;name&quot;: &quot;Quick Start Profile&quot;,
+          &quot;logicalId&quot;: &quot;61a82541-0b32-11f1-8907-42010a92240d&quot;,
+          &quot;enterpriseLogicalId&quot;: &quot;94883fd9-a7f3-419e-8ceb-39d8b5d5c6a7&quot;,
+          &quot;version&quot;: &quot;1771244643987&quot;,
+          &quot;description&quot;: &quot;Ubiqube&quot;,
+          &quot;configurationType&quot;: &quot;SEGMENT_BASED&quot;,
+          &quot;bastionState&quot;: &quot;UNCONFIGURED&quot;,
+          &quot;schemaVersion&quot;: &quot;3.0.0&quot;,
+          &quot;effective&quot;: &quot;0000-00-00 00:00:00&quot;,
+          &quot;modified&quot;: &quot;2026-02-16T12:24:04.000Z&quot;,
+          &quot;moduleId&quot;: 2109,
+          &quot;segmentObjectId&quot;: 1102
+        }
+      ],
+      &quot;groupCount&quot;: 0,
+      &quot;gateways&quot;: []
+    },
+    {
+      &quot;id&quot;: 1104,
+      &quot;created&quot;: &quot;2026-02-20T10:45:29.000Z&quot;,
+      &quot;operatorId&quot;: null,
+      &quot;networkId&quot;: null,
+      &quot;enterpriseId&quot;: 71,
+      &quot;edgeId&quot;: null,
+      &quot;gatewayId&quot;: null,
+      &quot;parentGroupId&quot;: null,
+      &quot;description&quot;: null,
+      &quot;object&quot;: &quot;NETWORK_SERVICE&quot;,
+      &quot;name&quot;: &quot;Netskope tunnel&quot;,
+      &quot;type&quot;: &quot;nvsViaEdgeService&quot;,
+      &quot;logicalId&quot;: &quot;dedd82da-e293-498a-aaf5-a5054f4b9fad&quot;,
+      &quot;alertsEnabled&quot;: 1,
+      &quot;operatorAlertsEnabled&quot;: 1,
+      &quot;status&quot;: null,
+      &quot;statusModified&quot;: &quot;0000-00-00 00:00:00&quot;,
+      &quot;previousData&quot;: {
+        &quot;automateDeployment&quot;: false,
+        &quot;backupServer&quot;: {
+          &quot;enabled&quot;: true,
+          &quot;sameTunnelSettingsAsPrimary&quot;: true,
+          &quot;IKEPROP&quot;: {
+            &quot;DHGroup&quot;: 14,
+            &quot;PFS&quot;: 14,
+            &quot;authenticationAlgorithm&quot;: &quot;Any&quot;,
+            &quot;authenticationMethod&quot;: &quot;PSK&quot;,
+            &quot;dpdTimeoutSeconds&quot;: 20,
+            &quot;dpdType&quot;: &quot;Disable&quot;,
+            &quot;encryptionAlgorithm&quot;: &quot;Any&quot;,
+            &quot;ikev1MainMode&quot;: true,
+            &quot;lifeTimeSeconds&quot;: 86400,
+            &quot;peerIkeId&quot;: {
+              &quot;__comment__&quot;: &quot;futual project&quot;,
+              &quot;ikeId&quot;: &quot;&quot;,
+              &quot;ikeIdType&quot;: &quot;FQDN&quot;
+            },
+            &quot;protocolVersion&quot;: 2
+          },
+          &quot;IPSECPROP&quot;: {
+            &quot;authenticationAlgorithm&quot;: &quot;SHA_256&quot;,
+            &quot;encryptionAlgorithm&quot;: &quot;AES_128_CBC&quot;,
+            &quot;ipsecTunnelType&quot;: &quot;ROUTE&quot;,
+            &quot;lifeTimeSeconds&quot;: 28800,
+            &quot;protocol&quot;: &quot;ESP_AUTH&quot;
+          },
+          &quot;localLinkIp&quot;: &quot;&quot;,
+          &quot;nvsPublicIp&quot;: &quot;163.116.176.38&quot;,
+          &quot;peerLinkIp&quot;: &quot;&quot;
+        },
+        &quot;bgp&quot;: {
+          &quot;__comment__&quot;: &quot;futual project&quot;,
+          &quot;enabled&quot;: false
+        },
+        &quot;cssp&quot;: false,
+        &quot;enabled&quot;: true,
+        &quot;keepBackupServerConnected&quot;: true,
+        &quot;peerSubnets&quot;: {
+          &quot;subnets&quot;: [
+            {
+              &quot;advertise&quot;: true,
+              &quot;cidrIp&quot;: &quot;172.16.2.0&quot;,
+              &quot;metric&quot;: 5,
+              &quot;name&quot;: &quot;&quot;,
+              &quot;cidrPrefix&quot;: &quot;24&quot;,
+              &quot;netMask&quot;: &quot;255.255.255.0&quot;,
+              &quot;gateway&quot;: null
+            }
+          ],
+          &quot;alwaysReachable&quot;: false,
+          &quot;version&quot;: &quot;1771584329407&quot;
+        },
+        &quot;primaryServer&quot;: {
+          &quot;IKEPROP&quot;: {
+            &quot;DHGroup&quot;: 14,
+            &quot;PFS&quot;: 14,
+            &quot;authenticationAlgorithm&quot;: &quot;Any&quot;,
+            &quot;authenticationMethod&quot;: &quot;PSK&quot;,
+            &quot;dpdTimeoutSeconds&quot;: 20,
+            &quot;dpdType&quot;: &quot;Disable&quot;,
+            &quot;encryptionAlgorithm&quot;: &quot;Any&quot;,
+            &quot;ikev1MainMode&quot;: true,
+            &quot;lifeTimeSeconds&quot;: 86400,
+            &quot;peerIkeId&quot;: {
+              &quot;__comment__&quot;: &quot;futual project&quot;,
+              &quot;ikeId&quot;: &quot;&quot;,
+              &quot;ikeIdType&quot;: &quot;FQDN&quot;
+            },
+            &quot;protocolVersion&quot;: 2
+          },
+          &quot;IPSECPROP&quot;: {
+            &quot;authenticationAlgorithm&quot;: &quot;SHA_256&quot;,
+            &quot;encryptionAlgorithm&quot;: &quot;AES_128_CBC&quot;,
+            &quot;ipsecTunnelType&quot;: &quot;ROUTE&quot;,
+            &quot;lifeTimeSeconds&quot;: 28800,
+            &quot;protocol&quot;: &quot;ESP_AUTH&quot;
+          },
+          &quot;localLinkIp&quot;: &quot;&quot;,
+          &quot;nvsPublicIp&quot;: &quot;163.116.163.38&quot;,
+          &quot;peerLinkIp&quot;: &quot;&quot;
+        },
+        &quot;provider&quot;: &quot;genericIKEv2Router&quot;,
+        &quot;providerCategory&quot;: &quot;DATACENTER&quot;,
+        &quot;routingPolicy&quot;: &quot;POLICY&quot;,
+        &quot;sharedIkeAuth&quot;: false,
+        &quot;sourceSubnets&quot;: {
+          &quot;__comment__&quot;: &quot;only needed for Policy based IPSEC&quot;,
+          &quot;subnets&quot;: []
+        },
+        &quot;tunnelMode&quot;: &quot;ACTIVE_HOT_STANDBY&quot;,
+        &quot;tunnelingProtocol&quot;: &quot;IPSEC&quot;,
+        &quot;type&quot;: &quot;genericIKEv2Router&quot;,
+        &quot;addressFamily&quot;: &quot;IPv4&quot;,
+        &quot;typeAlias&quot;: &quot;genericIKEv2Router&quot;,
+        &quot;version&quot;: &quot;1771584329407&quot;
+      },
+      &quot;previousCreated&quot;: &quot;2026-02-20T10:54:55.000Z&quot;,
+      &quot;draftData&quot;: null,
+      &quot;draftCreated&quot;: &quot;0000-00-00 00:00:00&quot;,
+      &quot;draftComment&quot;: null,
+      &quot;data&quot;: {
+        &quot;automateDeployment&quot;: false,
+        &quot;backupServer&quot;: {
+          &quot;enabled&quot;: true,
+          &quot;sameTunnelSettingsAsPrimary&quot;: true,
+          &quot;IKEPROP&quot;: {
+            &quot;DHGroup&quot;: 14,
+            &quot;PFS&quot;: 14,
+            &quot;authenticationAlgorithm&quot;: &quot;Any&quot;,
+            &quot;authenticationMethod&quot;: &quot;PSK&quot;,
+            &quot;dpdTimeoutSeconds&quot;: 20,
+            &quot;dpdType&quot;: &quot;Disable&quot;,
+            &quot;encryptionAlgorithm&quot;: &quot;Any&quot;,
+            &quot;ikev1MainMode&quot;: true,
+            &quot;lifeTimeSeconds&quot;: 86400,
+            &quot;peerIkeId&quot;: {
+              &quot;__comment__&quot;: &quot;futual project&quot;,
+              &quot;ikeId&quot;: &quot;&quot;,
+              &quot;ikeIdType&quot;: &quot;FQDN&quot;
+            },
+            &quot;protocolVersion&quot;: 2
+          },
+          &quot;IPSECPROP&quot;: {
+            &quot;authenticationAlgorithm&quot;: &quot;SHA_256&quot;,
+            &quot;encryptionAlgorithm&quot;: &quot;AES_128_CBC&quot;,
+            &quot;ipsecTunnelType&quot;: &quot;ROUTE&quot;,
+            &quot;lifeTimeSeconds&quot;: 28800,
+            &quot;protocol&quot;: &quot;ESP_AUTH&quot;
+          },
+          &quot;localLinkIp&quot;: &quot;&quot;,
+          &quot;nvsPublicIp&quot;: &quot;163.116.176.38&quot;,
+          &quot;peerLinkIp&quot;: &quot;&quot;
+        },
+        &quot;bgp&quot;: {
+          &quot;__comment__&quot;: &quot;futual project&quot;,
+          &quot;enabled&quot;: false
+        },
+        &quot;cssp&quot;: false,
+        &quot;enabled&quot;: true,
+        &quot;keepBackupServerConnected&quot;: true,
+        &quot;peerSubnets&quot;: {
+          &quot;subnets&quot;: [
+            {
+              &quot;advertise&quot;: true,
+              &quot;cidrIp&quot;: &quot;172.16.2.0&quot;,
+              &quot;metric&quot;: 5,
+              &quot;name&quot;: &quot;&quot;,
+              &quot;cidrPrefix&quot;: &quot;24&quot;,
+              &quot;netMask&quot;: &quot;255.255.255.0&quot;,
+              &quot;gateway&quot;: null
+            }
+          ],
+          &quot;alwaysReachable&quot;: false,
+          &quot;version&quot;: &quot;1771584329407&quot;
+        },
+        &quot;primaryServer&quot;: {
+          &quot;IKEPROP&quot;: {
+            &quot;DHGroup&quot;: 14,
+            &quot;PFS&quot;: 14,
+            &quot;authenticationAlgorithm&quot;: &quot;Any&quot;,
+            &quot;authenticationMethod&quot;: &quot;PSK&quot;,
+            &quot;dpdTimeoutSeconds&quot;: 20,
+            &quot;dpdType&quot;: &quot;Disable&quot;,
+            &quot;encryptionAlgorithm&quot;: &quot;Any&quot;,
+            &quot;ikev1MainMode&quot;: true,
+            &quot;lifeTimeSeconds&quot;: 86400,
+            &quot;peerIkeId&quot;: {
+              &quot;__comment__&quot;: &quot;futual project&quot;,
+              &quot;ikeId&quot;: &quot;&quot;,
+              &quot;ikeIdType&quot;: &quot;FQDN&quot;
+            },
+            &quot;protocolVersion&quot;: 2
+          },
+          &quot;IPSECPROP&quot;: {
+            &quot;authenticationAlgorithm&quot;: &quot;SHA_256&quot;,
+            &quot;encryptionAlgorithm&quot;: &quot;AES_128_CBC&quot;,
+            &quot;ipsecTunnelType&quot;: &quot;ROUTE&quot;,
+            &quot;lifeTimeSeconds&quot;: 28800,
+            &quot;protocol&quot;: &quot;ESP_AUTH&quot;
+          },
+          &quot;localLinkIp&quot;: &quot;&quot;,
+          &quot;nvsPublicIp&quot;: &quot;163.116.163.38&quot;,
+          &quot;peerLinkIp&quot;: &quot;&quot;
+        },
+        &quot;provider&quot;: &quot;genericIKEv2Router&quot;,
+        &quot;providerCategory&quot;: &quot;DATACENTER&quot;,
+        &quot;routingPolicy&quot;: &quot;POLICY&quot;,
+        &quot;sharedIkeAuth&quot;: false,
+        &quot;sourceSubnets&quot;: {
+          &quot;__comment__&quot;: &quot;only needed for Policy based IPSEC&quot;,
+          &quot;subnets&quot;: []
+        },
+        &quot;tunnelMode&quot;: &quot;ACTIVE_HOT_STANDBY&quot;,
+        &quot;tunnelingProtocol&quot;: &quot;IPSEC&quot;,
+        &quot;type&quot;: &quot;genericIKEv2Router&quot;,
+        &quot;addressFamily&quot;: &quot;IPv4&quot;,
+        &quot;typeAlias&quot;: &quot;genericIKEv2Router&quot;,
+        &quot;version&quot;: &quot;1771584329407&quot;
+      },
+      &quot;lastContact&quot;: &quot;0000-00-00 00:00:00&quot;,
+      &quot;version&quot;: &quot;1771584895364&quot;,
+      &quot;modified&quot;: &quot;2026-02-20T10:54:55.000Z&quot;,
+      &quot;profileCount&quot;: 0,
+      &quot;edgeUsage&quot;: [],
+      &quot;edgeCount&quot;: 0,
+      &quot;edgeQOSUsage&quot;: [],
+      &quot;configuration&quot;: [],
+      &quot;groupCount&quot;: 0,
+      &quot;gateways&quot;: []
+    },
+    {
+      &quot;id&quot;: 1105,
+      &quot;created&quot;: &quot;2026-02-20T10:58:04.000Z&quot;,
+      &quot;operatorId&quot;: null,
+      &quot;networkId&quot;: null,
+      &quot;enterpriseId&quot;: 71,
+      &quot;edgeId&quot;: null,
+      &quot;gatewayId&quot;: null,
+      &quot;parentGroupId&quot;: null,
+      &quot;description&quot;: null,
+      &quot;object&quot;: &quot;NETWORK_SERVICE&quot;,
+      &quot;name&quot;: &quot;Netskope Tunnel via Gateway&quot;,
+      &quot;type&quot;: &quot;dataCenter&quot;,
+      &quot;logicalId&quot;: &quot;c431e3ca-1ae7-4397-9bca-716a8c63c1dc&quot;,
+      &quot;alertsEnabled&quot;: 1,
+      &quot;operatorAlertsEnabled&quot;: 1,
+      &quot;status&quot;: &quot;{\&quot;primary\&quot;:\&quot;CONNECTED\&quot;,\&quot;secondary\&quot;:\&quot;CONNECTED\&quot;,\&quot;vpnGateways\&quot;:[],\&quot;vpnGatewaysRedundant\&quot;:[],\&quot;primaryRedundant\&quot;:\&quot;CONNECTED\&quot;,\&quot;secondaryRedundant\&quot;:\&quot;CONNECTED\&quot;,\&quot;activity\&quot;:{\&quot;primary\&quot;:{\&quot;gatewayLogicalId\&quot;:\&quot;gatewayee262fcb-6117-4ba9-b882-38ce8e21d547\&quot;,\&quot;status\&quot;:\&quot;CONNECTED\&quot;,\&quot;lastStatusEvent\&quot;:\&quot;2026-02-20T14:20:38.652Z\&quot;,\&quot;lastStatusChange\&quot;:\&quot;2026-02-20T11:41:10.727Z\&quot;,\&quot;l7Check\&quot;:null,\&quot;l7CheckRTT\&quot;:null,\&quot;redundant\&quot;:{\&quot;gatewayLogicalId\&quot;:\&quot;gateway1886f588-dccb-4264-868f-6a92b7e209b9\&quot;,\&quot;status\&quot;:\&quot;CONNECTED\&quot;,\&quot;lastStatusEvent\&quot;:\&quot;2026-02-20T14:20:54.449Z\&quot;,\&quot;lastStatusChange\&quot;:\&quot;2026-02-20T11:41:05.468Z\&quot;,\&quot;l7Check\&quot;:null,\&quot;l7CheckRTT\&quot;:null}},\&quot;secondary\&quot;:{\&quot;gatewayLogicalId\&quot;:\&quot;gatewayee262fcb-6117-4ba9-b882-38ce8e21d547\&quot;,\&quot;status\&quot;:\&quot;CONNECTED\&quot;,\&quot;lastStatusEvent\&quot;:\&quot;2026-02-20T14:20:38.652Z\&quot;,\&quot;lastStatusChange\&quot;:\&quot;2026-02-20T11:41:10.727Z\&quot;,\&quot;l7Check\&quot;:null,\&quot;l7CheckRTT\&quot;:null,\&quot;redundant\&quot;:{\&quot;gatewayLogicalId\&quot;:\&quot;gateway1886f588-dccb-4264-868f-6a92b7e209b9\&quot;,\&quot;status\&quot;:\&quot;CONNECTED\&quot;,\&quot;lastStatusEvent\&quot;:\&quot;2026-02-20T14:20:54.449Z\&quot;,\&quot;lastStatusChange\&quot;:\&quot;2026-02-20T11:41:05.468Z\&quot;,\&quot;l7Check\&quot;:null,\&quot;l7CheckRTT\&quot;:null}},\&quot;vpnGateways\&quot;:[]}}&quot;,
+      &quot;statusModified&quot;: &quot;2026-02-20T14:20:54.000Z&quot;,
+      &quot;previousData&quot;: {
+        &quot;tunnelMode&quot;: &quot;ACTIVE_HOT_STANDBY&quot;,
+        &quot;loadSharingMethod&quot;: {
+          &quot;algo&quot;: &quot;&quot;,
+          &quot;hashParams&quot;: {
+            &quot;srcIp&quot;: false,
+            &quot;destIp&quot;: false,
+            &quot;srcPort&quot;: false,
+            &quot;destPort&quot;: false,
+            &quot;protocol&quot;: false
+          }
+        },
+        &quot;isCDE&quot;: false,
+        &quot;datacenterVersion&quot;: &quot;1771585517209&quot;,
+        &quot;aggregation&quot;: [],
+        &quot;subnetsVersion&quot;: &quot;1771585614645&quot;,
+        &quot;bgpVersion&quot;: &quot;1771585192754&quot;,
+        &quot;authenticationVersion&quot;: &quot;1771585192756&quot;,
+        &quot;isServiceEnabled&quot;: true,
+        &quot;subnets&quot;: [
+          {
+            &quot;name&quot;: &quot;&quot;,
+            &quot;cidrIp&quot;: &quot;0.0.0.0&quot;,
+            &quot;cidrPrefix&quot;: 32,
+            &quot;netMask&quot;: &quot;255.255.255.255&quot;,
+            &quot;cidrIpStart&quot;: &quot;0.0.0.0&quot;,
+            &quot;cidrIpEnd&quot;: &quot;0.0.0.0&quot;,
+            &quot;nextHop&quot;: []
+          }
+        ],
+        &quot;authentication&quot;: {
+          &quot;type&quot;: &quot;FQDN&quot;,
+          &quot;key&quot;: &quot;Echirolles710.sase-opslab.com&quot;
+        },
+        &quot;primary&quot;: {
+          &quot;dataCenterPublicIp&quot;: &quot;163.116.163.38&quot;,
+          &quot;redundant&quot;: {
+            &quot;dataCenterPublicIp&quot;: &quot;163.116.163.38&quot;,
+            &quot;type&quot;: &quot;GenericIKEv2Router&quot;,
+            &quot;typeAlias&quot;: &quot;GenericIKEv2Router&quot;,
+            &quot;disabled&quot;: false,
+            &quot;gatewayPublicIp&quot;: &quot;83.142.144.70&quot;,
+            &quot;IKESA&quot;: {
+              &quot;ikeVersion&quot;: 2,
+              &quot;ikeId&quot;: null,
+              &quot;ikeInitiator&quot;: &quot;both&quot;,
+              &quot;authenticationMethod&quot;: &quot;PSK&quot;,
+              &quot;sharedKeyType&quot;: &quot;hex&quot;,
+              &quot;sharedKey&quot;: &quot;{ENCRYPTED}eyJjb250ZW50IjoiZDY0YzcyMjIxMWMwZjZiZjI3NDhkYTFlMmU2NTdjNTQxOGU3NTk1ZDA0M2MzOGNkMjM0Y2M4NmEwMmI3NGU0ZCIsInRhZyI6Ijc3ZGE5N2UwZjBlNzU5MWVkZGRlNDAxYWUxZDBjYTBlIiwiaXYiOiI4NTM0MjM0MmI1MzUwZmEyYWY4YmQ4NjQ4Y2UyZjBiNSIsInNhbHQiOiIwYjFiMDVlYzdkYjU5NDhhYzY5ODViNWMifQ&quot;,
+              &quot;authenticationAlgorithm&quot;: &quot;SHA1&quot;,
+              &quot;lifeTimeSeconds&quot;: 86400,
+              &quot;phaseOneNegotiationMode&quot;: &quot;main&quot;,
+              &quot;DHGroup&quot;: 2,
+              &quot;authenticationTimeSeconds&quot;: 172800
+            },
+            &quot;IPSECSA&quot;: {
+              &quot;protocol&quot;: &quot;ESP&quot;,
+              &quot;authenticationAlgorithm&quot;: &quot;SHA_1&quot;,
+              &quot;encryptionAlgorithm&quot;: &quot;AES-128-CBC&quot;,
+              &quot;lifeTimeSeconds&quot;: 28800,
+              &quot;mode&quot;: &quot;tunnel&quot;,
+              &quot;perfectForwardSecurity&quot;: &quot;2&quot;
+            },
+            &quot;IPSECDPD&quot;: {
+              &quot;type&quot;: &quot;onDemand&quot;,
+              &quot;intervalSeconds&quot;: 10,
+              &quot;dpdTimeoutSeconds&quot;: 20,
+              &quot;retries&quot;: 3
+            },
+            &quot;fragmentationAvoidance&quot;: {
+              &quot;tcpMssAdjustmentBytes&quot;: 1320,
+              &quot;clearDontFragmentBit&quot;: &quot;enabled&quot;,
+              &quot;fragmentationStyle&quot;: &quot;Before Encryption / Look Ahead Fragmention&quot;
+            },
+            &quot;tunnelInterface&quot;: {
+              &quot;MTU&quot;: 1328
+            },
+            &quot;dataCenterLinkIp&quot;: &quot;169.254.0.10&quot;,
+            &quot;gatewayLinkIp&quot;: &quot;169.254.0.9&quot;
+          },
+          &quot;type&quot;: &quot;GenericIKEv2Router&quot;,
+          &quot;typeAlias&quot;: &quot;GenericIKEv2Router&quot;,
+          &quot;version&quot;: &quot;1771585192755&quot;,
+          &quot;disabled&quot;: false,
+          &quot;gatewayPublicIp&quot;: &quot;83.142.144.66&quot;,
+          &quot;IKESA&quot;: {
+            &quot;ikeVersion&quot;: 2,
+            &quot;ikeId&quot;: null,
+            &quot;ikeInitiator&quot;: &quot;both&quot;,
+            &quot;authenticationMethod&quot;: &quot;PSK&quot;,
+            &quot;sharedKeyType&quot;: &quot;hex&quot;,
+            &quot;sharedKey&quot;: &quot;{ENCRYPTED}eyJjb250ZW50IjoiODYyMjY5OTRmYjhmNWM1NjY1OWJjMjJmMDgyN2VlMjMwODUxNzIyNzc2YmY3Yzk4OTVjZDEwNjQ2MGVhMzRlNyIsInRhZyI6ImM0NGM2NzEzZjJiNWViNDUxNWE0YWFmNDNhZGZlZjRiIiwiaXYiOiIxYzg1MGJlNTQ1ZDRkNzBjNjljMDY3OGJhYjBiNzBjYSIsInNhbHQiOiIxMjQyODE5NDk3MDE4MjBjOTRjN2M5OTgifQ&quot;,
+            &quot;authenticationAlgorithm&quot;: &quot;SHA1&quot;,
+            &quot;lifeTimeSeconds&quot;: 86400,
+            &quot;phaseOneNegotiationMode&quot;: &quot;main&quot;,
+            &quot;DHGroup&quot;: 2,
+            &quot;authenticationTimeSeconds&quot;: 172800
+          },
+          &quot;IPSECSA&quot;: {
+            &quot;protocol&quot;: &quot;ESP&quot;,
+            &quot;authenticationAlgorithm&quot;: &quot;SHA_1&quot;,
+            &quot;encryptionAlgorithm&quot;: &quot;AES-128-CBC&quot;,
+            &quot;lifeTimeSeconds&quot;: 28800,
+            &quot;mode&quot;: &quot;tunnel&quot;,
+            &quot;perfectForwardSecurity&quot;: &quot;2&quot;
+          },
+          &quot;IPSECDPD&quot;: {
+            &quot;type&quot;: &quot;onDemand&quot;,
+            &quot;intervalSeconds&quot;: 10,
+            &quot;dpdTimeoutSeconds&quot;: 20,
+            &quot;retries&quot;: 3
+          },
+          &quot;fragmentationAvoidance&quot;: {
+            &quot;tcpMssAdjustmentBytes&quot;: 1320,
+            &quot;clearDontFragmentBit&quot;: &quot;enabled&quot;,
+            &quot;fragmentationStyle&quot;: &quot;Before Encryption / Look Ahead Fragmention&quot;
+          },
+          &quot;tunnelInterface&quot;: {
+            &quot;MTU&quot;: 1328
+          },
+          &quot;geoData&quot;: {
+            &quot;latitude&quot;: 48.8558,
+            &quot;longitude&quot;: 2.3494
+          },
+          &quot;dataCenterLinkIp&quot;: &quot;169.254.0.2&quot;,
+          &quot;gatewayLinkIp&quot;: &quot;169.254.0.1&quot;
+        },
+        &quot;secondary&quot;: {
+          &quot;dataCenterPublicIp&quot;: &quot;163.116.176.38&quot;,
+          &quot;redundant&quot;: {
+            &quot;dataCenterPublicIp&quot;: &quot;163.116.176.38&quot;,
+            &quot;type&quot;: &quot;GenericIKEv2Router&quot;,
+            &quot;disabled&quot;: false,
+            &quot;gatewayPublicIp&quot;: &quot;83.142.144.70&quot;,
+            &quot;IKESA&quot;: {
+              &quot;ikeVersion&quot;: 2,
+              &quot;ikeId&quot;: null,
+              &quot;ikeInitiator&quot;: &quot;both&quot;,
+              &quot;authenticationMethod&quot;: &quot;PSK&quot;,
+              &quot;sharedKeyType&quot;: &quot;hex&quot;,
+              &quot;sharedKey&quot;: &quot;{ENCRYPTED}eyJjb250ZW50IjoiN2MyNWRkMjUwMzNiZDQ2ZDYzNzViYzFmY2QzYWQ3NzYzOTM2NzZjODZjOGM5ZDMwMWRmZjRlZTI3NjMzZmQ2YSIsInRhZyI6IjViYWM2YjA3YTc0ZDc3ZDgwYmJkNTY2ZjY4YWY4MmNiIiwiaXYiOiI3ZTM0MTYzYjZlYzI5ZDI5MmJlM2I3YzBjMzExZWFkZSIsInNhbHQiOiIwMmM3MGI2NDQzMmJkODczM2JiM2VlODYifQ&quot;,
+              &quot;authenticationAlgorithm&quot;: &quot;SHA1&quot;,
+              &quot;lifeTimeSeconds&quot;: 86400,
+              &quot;phaseOneNegotiationMode&quot;: &quot;main&quot;,
+              &quot;DHGroup&quot;: 2,
+              &quot;authenticationTimeSeconds&quot;: 172800
+            },
+            &quot;IPSECSA&quot;: {
+              &quot;protocol&quot;: &quot;ESP&quot;,
+              &quot;authenticationAlgorithm&quot;: &quot;SHA_1&quot;,
+              &quot;encryptionAlgorithm&quot;: &quot;AES-128-CBC&quot;,
+              &quot;lifeTimeSeconds&quot;: 28800,
+              &quot;mode&quot;: &quot;tunnel&quot;,
+              &quot;perfectForwardSecurity&quot;: &quot;2&quot;
+            },
+            &quot;IPSECDPD&quot;: {
+              &quot;type&quot;: &quot;onDemand&quot;,
+              &quot;intervalSeconds&quot;: 10,
+              &quot;dpdTimeoutSeconds&quot;: 20,
+              &quot;retries&quot;: 3
+            },
+            &quot;fragmentationAvoidance&quot;: {
+              &quot;tcpMssAdjustmentBytes&quot;: 1320,
+              &quot;clearDontFragmentBit&quot;: &quot;enabled&quot;,
+              &quot;fragmentationStyle&quot;: &quot;Before Encryption / Look Ahead Fragmention&quot;
+            },
+            &quot;tunnelInterface&quot;: {
+              &quot;MTU&quot;: 1328
+            },
+            &quot;dataCenterLinkIp&quot;: &quot;169.254.0.14&quot;,
+            &quot;gatewayLinkIp&quot;: &quot;169.254.0.13&quot;,
+            &quot;typeAlias&quot;: &quot;GenericIKEv2Router&quot;
+          },
+          &quot;type&quot;: &quot;GenericIKEv2Router&quot;,
+          &quot;version&quot;: &quot;1771585517211&quot;,
+          &quot;disabled&quot;: false,
+          &quot;gatewayPublicIp&quot;: &quot;83.142.144.66&quot;,
+          &quot;IKESA&quot;: {
+            &quot;ikeVersion&quot;: 2,
+            &quot;ikeId&quot;: null,
+            &quot;ikeInitiator&quot;: &quot;both&quot;,
+            &quot;authenticationMethod&quot;: &quot;PSK&quot;,
+            &quot;sharedKeyType&quot;: &quot;hex&quot;,
+            &quot;sharedKey&quot;: &quot;{ENCRYPTED}eyJjb250ZW50IjoiYjc0ZDgxMGIwMjQxYWZlYzdiMDU5YWY5ZTY4ZDg3NDhiMjVjYTEyNjcyOWQ0ZDFkOWNkZWM2ZmI4YzI2YTYxOSIsInRhZyI6IjU3ZWUxZWQ0NmI3NGM5MmIzYzM0ZTdjYzlhNGZhNTdlIiwiaXYiOiIzZWQxMTE5NjMzYWVlMjg3ZTdmODFhNDQ5MDUzNmIxNiIsInNhbHQiOiI3MWYxNjcxMWY1NDllZTVkNTkyZWEzNzIifQ&quot;,
+            &quot;authenticationAlgorithm&quot;: &quot;SHA1&quot;,
+            &quot;lifeTimeSeconds&quot;: 86400,
+            &quot;phaseOneNegotiationMode&quot;: &quot;main&quot;,
+            &quot;DHGroup&quot;: 2,
+            &quot;authenticationTimeSeconds&quot;: 172800
+          },
+          &quot;IPSECSA&quot;: {
+            &quot;protocol&quot;: &quot;ESP&quot;,
+            &quot;authenticationAlgorithm&quot;: &quot;SHA_1&quot;,
+            &quot;encryptionAlgorithm&quot;: &quot;AES-128-CBC&quot;,
+            &quot;lifeTimeSeconds&quot;: 28800,
+            &quot;mode&quot;: &quot;tunnel&quot;,
+            &quot;perfectForwardSecurity&quot;: &quot;2&quot;
+          },
+          &quot;IPSECDPD&quot;: {
+            &quot;type&quot;: &quot;onDemand&quot;,
+            &quot;intervalSeconds&quot;: 10,
+            &quot;dpdTimeoutSeconds&quot;: 20,
+            &quot;retries&quot;: 3
+          },
+          &quot;fragmentationAvoidance&quot;: {
+            &quot;tcpMssAdjustmentBytes&quot;: 1320,
+            &quot;clearDontFragmentBit&quot;: &quot;enabled&quot;,
+            &quot;fragmentationStyle&quot;: &quot;Before Encryption / Look Ahead Fragmention&quot;
+          },
+          &quot;tunnelInterface&quot;: {
+            &quot;MTU&quot;: 1328
+          },
+          &quot;geoData&quot;: {
+            &quot;latitude&quot;: 48.8558,
+            &quot;longitude&quot;: 2.3494
+          },
+          &quot;dataCenterLinkIp&quot;: &quot;169.254.0.6&quot;,
+          &quot;gatewayLinkIp&quot;: &quot;169.254.0.5&quot;,
+          &quot;typeAlias&quot;: &quot;GenericIKEv2Router&quot;
+        },
+        &quot;bgpDisabled&quot;: true,
+        &quot;bfdDisabled&quot;: true
+      },
+      &quot;previousCreated&quot;: &quot;2026-02-20T11:33:13.000Z&quot;,
+      &quot;draftData&quot;: null,
+      &quot;draftCreated&quot;: &quot;0000-00-00 00:00:00&quot;,
+      &quot;draftComment&quot;: null,
+      &quot;data&quot;: {
+        &quot;tunnelMode&quot;: &quot;ACTIVE_HOT_STANDBY&quot;,
+        &quot;loadSharingMethod&quot;: {
+          &quot;algo&quot;: &quot;&quot;,
+          &quot;hashParams&quot;: {
+            &quot;srcIp&quot;: false,
+            &quot;destIp&quot;: false,
+            &quot;srcPort&quot;: false,
+            &quot;destPort&quot;: false,
+            &quot;protocol&quot;: false
+          }
+        },
+        &quot;isCDE&quot;: false,
+        &quot;datacenterVersion&quot;: &quot;1771587193231&quot;,
+        &quot;aggregation&quot;: [],
+        &quot;subnetsVersion&quot;: &quot;1771585614645&quot;,
+        &quot;bgpVersion&quot;: &quot;1771585192754&quot;,
+        &quot;authenticationVersion&quot;: &quot;1771585192756&quot;,
+        &quot;isServiceEnabled&quot;: true,
+        &quot;subnets&quot;: [
+          {
+            &quot;name&quot;: &quot;&quot;,
+            &quot;cidrIp&quot;: &quot;0.0.0.0&quot;,
+            &quot;cidrPrefix&quot;: 32,
+            &quot;netMask&quot;: &quot;255.255.255.255&quot;,
+            &quot;cidrIpStart&quot;: &quot;0.0.0.0&quot;,
+            &quot;cidrIpEnd&quot;: &quot;0.0.0.0&quot;,
+            &quot;nextHop&quot;: []
+          }
+        ],
+        &quot;authentication&quot;: {
+          &quot;type&quot;: &quot;FQDN&quot;,
+          &quot;key&quot;: &quot;Echirolles710.sase-opslab.com&quot;
+        },
+        &quot;primary&quot;: {
+          &quot;dataCenterPublicIp&quot;: &quot;163.116.163.38&quot;,
+          &quot;redundant&quot;: {
+            &quot;dataCenterPublicIp&quot;: &quot;163.116.163.38&quot;,
+            &quot;type&quot;: &quot;GenericIKEv2Router&quot;,
+            &quot;typeAlias&quot;: &quot;GenericIKEv2Router&quot;,
+            &quot;disabled&quot;: false,
+            &quot;gatewayPublicIp&quot;: &quot;83.142.144.70&quot;,
+            &quot;IKESA&quot;: {
+              &quot;ikeVersion&quot;: 2,
+              &quot;ikeId&quot;: null,
+              &quot;ikeInitiator&quot;: &quot;both&quot;,
+              &quot;authenticationMethod&quot;: &quot;PSK&quot;,
+              &quot;sharedKeyType&quot;: &quot;hex&quot;,
+              &quot;sharedKey&quot;: &quot;{ENCRYPTED}eyJjb250ZW50IjoiMWMzZTEyYzczMDUwZTkwZTc1ODQyOWQ2NDRmMjdhOThlOGNiNjUxOGU3ZjJiZTU5ODk1NjBlNWVhYTIwOTljOCIsInRhZyI6IjM2MTcyYWJiYWVmOGUxN2RhMWI1Yjk2MmUxNWQwOTMwIiwiaXYiOiI5YTNjNmEzMDY2M2E4MWVjMmYzN2ZmMzJhNjI0MzUzZCIsInNhbHQiOiI5MWE3Y2IwZDE1MTc2MTBiMDBlNzRlZmYifQ&quot;,
+              &quot;authenticationAlgorithm&quot;: &quot;SHA1&quot;,
+              &quot;lifeTimeSeconds&quot;: 86400,
+              &quot;phaseOneNegotiationMode&quot;: &quot;main&quot;,
+              &quot;DHGroup&quot;: 14,
+              &quot;authenticationTimeSeconds&quot;: 172800
+            },
+            &quot;IPSECSA&quot;: {
+              &quot;protocol&quot;: &quot;ESP&quot;,
+              &quot;authenticationAlgorithm&quot;: &quot;SHA_1&quot;,
+              &quot;encryptionAlgorithm&quot;: &quot;AES-128-CBC&quot;,
+              &quot;lifeTimeSeconds&quot;: 28800,
+              &quot;mode&quot;: &quot;tunnel&quot;,
+              &quot;perfectForwardSecurity&quot;: &quot;2&quot;
+            },
+            &quot;IPSECDPD&quot;: {
+              &quot;type&quot;: &quot;onDemand&quot;,
+              &quot;intervalSeconds&quot;: 10,
+              &quot;dpdTimeoutSeconds&quot;: 20,
+              &quot;retries&quot;: 3
+            },
+            &quot;fragmentationAvoidance&quot;: {
+              &quot;tcpMssAdjustmentBytes&quot;: 1320,
+              &quot;clearDontFragmentBit&quot;: &quot;enabled&quot;,
+              &quot;fragmentationStyle&quot;: &quot;Before Encryption / Look Ahead Fragmention&quot;
+            },
+            &quot;tunnelInterface&quot;: {
+              &quot;MTU&quot;: 1328
+            },
+            &quot;dataCenterLinkIp&quot;: &quot;169.254.0.10&quot;,
+            &quot;gatewayLinkIp&quot;: &quot;169.254.0.9&quot;
+          },
+          &quot;type&quot;: &quot;GenericIKEv2Router&quot;,
+          &quot;typeAlias&quot;: &quot;GenericIKEv2Router&quot;,
+          &quot;version&quot;: &quot;1771587193234&quot;,
+          &quot;disabled&quot;: false,
+          &quot;gatewayPublicIp&quot;: &quot;83.142.144.66&quot;,
+          &quot;IKESA&quot;: {
+            &quot;ikeVersion&quot;: 2,
+            &quot;ikeId&quot;: null,
+            &quot;ikeInitiator&quot;: &quot;both&quot;,
+            &quot;authenticationMethod&quot;: &quot;PSK&quot;,
+            &quot;sharedKeyType&quot;: &quot;hex&quot;,
+            &quot;sharedKey&quot;: &quot;{ENCRYPTED}eyJjb250ZW50IjoiMjNmYTdlZTQ0MzZlNzc1ZDc2ODUzNjFlNjhjZWU2NWYyNjcwYTg3MjFkNGZiOTgwY2U1YTVhNDNlOWE1YmJhOCIsInRhZyI6IjhkZDlkODJkYWUwODA4YWI4ZjNkOTExYTMxZTU3YjZjIiwiaXYiOiI0N2JmZjI0YjExY2QxNDc0ZDA1ZTU5NTdjYmYxYmE3OCIsInNhbHQiOiJiYjZmM2NhMzhiNDUwNmQ4YTExYjIyYjUifQ&quot;,
+            &quot;authenticationAlgorithm&quot;: &quot;SHA1&quot;,
+            &quot;lifeTimeSeconds&quot;: 86400,
+            &quot;phaseOneNegotiationMode&quot;: &quot;main&quot;,
+            &quot;DHGroup&quot;: 14,
+            &quot;authenticationTimeSeconds&quot;: 172800
+          },
+          &quot;IPSECSA&quot;: {
+            &quot;protocol&quot;: &quot;ESP&quot;,
+            &quot;authenticationAlgorithm&quot;: &quot;SHA_1&quot;,
+            &quot;encryptionAlgorithm&quot;: &quot;AES-128-CBC&quot;,
+            &quot;lifeTimeSeconds&quot;: 28800,
+            &quot;mode&quot;: &quot;tunnel&quot;,
+            &quot;perfectForwardSecurity&quot;: &quot;2&quot;
+          },
+          &quot;IPSECDPD&quot;: {
+            &quot;type&quot;: &quot;onDemand&quot;,
+            &quot;intervalSeconds&quot;: 10,
+            &quot;dpdTimeoutSeconds&quot;: 20,
+            &quot;retries&quot;: 3
+          },
+          &quot;fragmentationAvoidance&quot;: {
+            &quot;tcpMssAdjustmentBytes&quot;: 1320,
+            &quot;clearDontFragmentBit&quot;: &quot;enabled&quot;,
+            &quot;fragmentationStyle&quot;: &quot;Before Encryption / Look Ahead Fragmention&quot;
+          },
+          &quot;tunnelInterface&quot;: {
+            &quot;MTU&quot;: 1328
+          },
+          &quot;geoData&quot;: {
+            &quot;latitude&quot;: 48.8558,
+            &quot;longitude&quot;: 2.3494
+          },
+          &quot;dataCenterLinkIp&quot;: &quot;169.254.0.2&quot;,
+          &quot;gatewayLinkIp&quot;: &quot;169.254.0.1&quot;
+        },
+        &quot;secondary&quot;: {
+          &quot;dataCenterPublicIp&quot;: &quot;163.116.176.38&quot;,
+          &quot;redundant&quot;: {
+            &quot;dataCenterPublicIp&quot;: &quot;163.116.176.38&quot;,
+            &quot;type&quot;: &quot;GenericIKEv2Router&quot;,
+            &quot;disabled&quot;: false,
+            &quot;gatewayPublicIp&quot;: &quot;83.142.144.70&quot;,
+            &quot;IKESA&quot;: {
+              &quot;ikeVersion&quot;: 2,
+              &quot;ikeId&quot;: null,
+              &quot;ikeInitiator&quot;: &quot;both&quot;,
+              &quot;authenticationMethod&quot;: &quot;PSK&quot;,
+              &quot;sharedKeyType&quot;: &quot;hex&quot;,
+              &quot;sharedKey&quot;: &quot;{ENCRYPTED}eyJjb250ZW50IjoiZGUxYzMxMGQ1MGE3NGFmMzc1MDczNjY0M2NhNGRiYTNkNzRjNWU1NWY3MGVhOGUyMDhhMWE0NTYxMWU0YmZkOCIsInRhZyI6ImE2NDIxODhkZWMwZmVlNmJjOWZkZmI5ZDk2NGI2OTU2IiwiaXYiOiI2ZmMzMDA1NDRlZGM4Y2JkNDE5YzE4NzQ5NGE2ODM2MyIsInNhbHQiOiI0ZGNmMWI5MGEyNDRiM2MxNzAxMTFiYmYifQ&quot;,
+              &quot;authenticationAlgorithm&quot;: &quot;SHA1&quot;,
+              &quot;lifeTimeSeconds&quot;: 86400,
+              &quot;phaseOneNegotiationMode&quot;: &quot;main&quot;,
+              &quot;DHGroup&quot;: 14,
+              &quot;authenticationTimeSeconds&quot;: 172800
+            },
+            &quot;IPSECSA&quot;: {
+              &quot;protocol&quot;: &quot;ESP&quot;,
+              &quot;authenticationAlgorithm&quot;: &quot;SHA_1&quot;,
+              &quot;encryptionAlgorithm&quot;: &quot;AES-128-CBC&quot;,
+              &quot;lifeTimeSeconds&quot;: 28800,
+              &quot;mode&quot;: &quot;tunnel&quot;,
+              &quot;perfectForwardSecurity&quot;: &quot;2&quot;
+            },
+            &quot;IPSECDPD&quot;: {
+              &quot;type&quot;: &quot;onDemand&quot;,
+              &quot;intervalSeconds&quot;: 10,
+              &quot;dpdTimeoutSeconds&quot;: 20,
+              &quot;retries&quot;: 3
+            },
+            &quot;fragmentationAvoidance&quot;: {
+              &quot;tcpMssAdjustmentBytes&quot;: 1320,
+              &quot;clearDontFragmentBit&quot;: &quot;enabled&quot;,
+              &quot;fragmentationStyle&quot;: &quot;Before Encryption / Look Ahead Fragmention&quot;
+            },
+            &quot;tunnelInterface&quot;: {
+              &quot;MTU&quot;: 1328
+            },
+            &quot;dataCenterLinkIp&quot;: &quot;169.254.0.14&quot;,
+            &quot;gatewayLinkIp&quot;: &quot;169.254.0.13&quot;,
+            &quot;typeAlias&quot;: &quot;GenericIKEv2Router&quot;
+          },
+          &quot;type&quot;: &quot;GenericIKEv2Router&quot;,
+          &quot;version&quot;: &quot;1771587193234&quot;,
+          &quot;disabled&quot;: false,
+          &quot;gatewayPublicIp&quot;: &quot;83.142.144.66&quot;,
+          &quot;IKESA&quot;: {
+            &quot;ikeVersion&quot;: 2,
+            &quot;ikeId&quot;: null,
+            &quot;ikeInitiator&quot;: &quot;both&quot;,
+            &quot;authenticationMethod&quot;: &quot;PSK&quot;,
+            &quot;sharedKeyType&quot;: &quot;hex&quot;,
+            &quot;sharedKey&quot;: &quot;{ENCRYPTED}eyJjb250ZW50IjoiODcwM2U4ZTIzZjZkMTdmZjVkMjk1ODA3YjgwODExYjM2YzhkZmFlMTQ3ZWU5MTVmMjc2Mjg1MGYwZTEzYTU2NiIsInRhZyI6IjM2ODZjZTA0NTU5MzIzY2E4MGVjMWNmMTgxY2YxNTQyIiwiaXYiOiIxYjhiZGZlYzAxOTdjYmVlZWVhMzU1MTljNDc2NTU5OSIsInNhbHQiOiJjMGRkNDZiNTQ4OWY2YzYwNjYzZGFmZGUifQ&quot;,
+            &quot;authenticationAlgorithm&quot;: &quot;SHA1&quot;,
+            &quot;lifeTimeSeconds&quot;: 86400,
+            &quot;phaseOneNegotiationMode&quot;: &quot;main&quot;,
+            &quot;DHGroup&quot;: 14,
+            &quot;authenticationTimeSeconds&quot;: 172800
+          },
+          &quot;IPSECSA&quot;: {
+            &quot;protocol&quot;: &quot;ESP&quot;,
+            &quot;authenticationAlgorithm&quot;: &quot;SHA_1&quot;,
+            &quot;encryptionAlgorithm&quot;: &quot;AES-128-CBC&quot;,
+            &quot;lifeTimeSeconds&quot;: 28800,
+            &quot;mode&quot;: &quot;tunnel&quot;,
+            &quot;perfectForwardSecurity&quot;: &quot;2&quot;
+          },
+          &quot;IPSECDPD&quot;: {
+            &quot;type&quot;: &quot;onDemand&quot;,
+            &quot;intervalSeconds&quot;: 10,
+            &quot;dpdTimeoutSeconds&quot;: 20,
+            &quot;retries&quot;: 3
+          },
+          &quot;fragmentationAvoidance&quot;: {
+            &quot;tcpMssAdjustmentBytes&quot;: 1320,
+            &quot;clearDontFragmentBit&quot;: &quot;enabled&quot;,
+            &quot;fragmentationStyle&quot;: &quot;Before Encryption / Look Ahead Fragmention&quot;
+          },
+          &quot;tunnelInterface&quot;: {
+            &quot;MTU&quot;: 1328
+          },
+          &quot;geoData&quot;: {
+            &quot;latitude&quot;: 48.8558,
+            &quot;longitude&quot;: 2.3494
+          },
+          &quot;dataCenterLinkIp&quot;: &quot;169.254.0.6&quot;,
+          &quot;gatewayLinkIp&quot;: &quot;169.254.0.5&quot;,
+          &quot;typeAlias&quot;: &quot;GenericIKEv2Router&quot;
+        },
+        &quot;bgpDisabled&quot;: true,
+        &quot;bfdDisabled&quot;: true
+      },
+      &quot;lastContact&quot;: &quot;2026-02-20T14:20:54.000Z&quot;,
+      &quot;version&quot;: &quot;1771587193213&quot;,
+      &quot;modified&quot;: &quot;2026-02-20T11:42:45.000Z&quot;,
+      &quot;profileCount&quot;: 1,
+      &quot;edgeUsage&quot;: [],
+      &quot;edgeCount&quot;: 0,
+      &quot;edgeQOSUsage&quot;: [],
+      &quot;configuration&quot;: [
+        {
+          &quot;enterpriseObjectId&quot;: 1105,
+          &quot;id&quot;: 473,
+          &quot;created&quot;: &quot;2026-02-16T12:24:03.000Z&quot;,
+          &quot;name&quot;: &quot;Quick Start Profile&quot;,
+          &quot;logicalId&quot;: &quot;61a82541-0b32-11f1-8907-42010a92240d&quot;,
+          &quot;enterpriseLogicalId&quot;: &quot;94883fd9-a7f3-419e-8ceb-39d8b5d5c6a7&quot;,
+          &quot;version&quot;: &quot;1771244643987&quot;,
+          &quot;description&quot;: &quot;Ubiqube&quot;,
+          &quot;configurationType&quot;: &quot;SEGMENT_BASED&quot;,
+          &quot;bastionState&quot;: &quot;UNCONFIGURED&quot;,
+          &quot;schemaVersion&quot;: &quot;3.0.0&quot;,
+          &quot;effective&quot;: &quot;0000-00-00 00:00:00&quot;,
+          &quot;modified&quot;: &quot;2026-02-16T12:24:04.000Z&quot;,
+          &quot;moduleId&quot;: 2111,
+          &quot;segmentObjectId&quot;: 1102
+        },
+        {
+          &quot;enterpriseObjectId&quot;: 1105,
+          &quot;id&quot;: 473,
+          &quot;created&quot;: &quot;2026-02-16T12:24:03.000Z&quot;,
+          &quot;name&quot;: &quot;Quick Start Profile&quot;,
+          &quot;logicalId&quot;: &quot;61a82541-0b32-11f1-8907-42010a92240d&quot;,
+          &quot;enterpriseLogicalId&quot;: &quot;94883fd9-a7f3-419e-8ceb-39d8b5d5c6a7&quot;,
+          &quot;version&quot;: &quot;1771244643987&quot;,
+          &quot;description&quot;: &quot;Ubiqube&quot;,
+          &quot;configurationType&quot;: &quot;SEGMENT_BASED&quot;,
+          &quot;bastionState&quot;: &quot;UNCONFIGURED&quot;,
+          &quot;schemaVersion&quot;: &quot;3.0.0&quot;,
+          &quot;effective&quot;: &quot;0000-00-00 00:00:00&quot;,
+          &quot;modified&quot;: &quot;2026-02-16T12:24:04.000Z&quot;,
+          &quot;moduleId&quot;: 2109,
+          &quot;segmentObjectId&quot;: 1102
+        }
+      ],
+      &quot;groupCount&quot;: 0,
+      &quot;gateways&quot;: [
+        {
+          &quot;id&quot;: 11,
+          &quot;created&quot;: &quot;2020-05-03T23:39:04.000Z&quot;,
+          &quot;networkId&quot;: 1,
+          &quot;enterpriseProxyId&quot;: null,
+          &quot;siteId&quot;: 166,
+          &quot;activationKey&quot;: &quot;YJWE-9QSX-DAQW-X2X9&quot;,
+          &quot;activationState&quot;: &quot;ACTIVATED&quot;,
+          &quot;activationTime&quot;: &quot;2020-05-19T10:34:54.000Z&quot;,
+          &quot;softwareVersion&quot;: &quot;3.4.1&quot;,
+          &quot;buildNumber&quot;: &quot;R341-20200410-GA-8695e50275&quot;,
+          &quot;utilization&quot;: 0.42,
+          &quot;utilizationDetail&quot;: &quot;{\&quot;load\&quot;:0.015,\&quot;overall\&quot;:0.424,\&quot;cpu\&quot;:0.0195,\&quot;memory\&quot;:0.424}&quot;,
+          &quot;connectedEdges&quot;: 1,
+          &quot;connectedEdgeList&quot;: &quot;[{\&quot;vceid\&quot;:\&quot;189f00f4-bf02-47ff-bc85-e585e8358bbe\&quot;}]&quot;,
+          &quot;dataCenterVpnStates&quot;: &quot;[{\&quot;expectedIpsecSaCount\&quot;:1,\&quot;ikeSaCount\&quot;:1,\&quot;enterpriseLogicalId\&quot;:\&quot;94883fd9-a7f3-419e-8ceb-39d8b5d5c6a7\&quot;,\&quot;ipsecSaCount\&quot;:1,\&quot;dataCenterLogicalId\&quot;:\&quot;c431e3ca-1ae7-4397-9bca-716a8c63c1dc\&quot;,\&quot;type\&quot;:\&quot;Generic IKEv2 router\&quot;,\&quot;dataCenterPublicIp\&quot;:\&quot;163.116.176.38\&quot;},{\&quot;expectedIpsecSaCount\&quot;:1,\&quot;ikeSaCount\&quot;:0,\&quot;enterpriseLogicalId\&quot;:\&quot;94883fd9-a7f3-419e-8ceb-39d8b5d5c6a7\&quot;,\&quot;ipsecSaCount\&quot;:1,\&quot;dataCenterLogicalId\&quot;:\&quot;c431e3ca-1ae7-4397-9bca-716a8c63c1dc\&quot;,\&quot;type\&quot;:\&quot;Generic IKEv2 router\&quot;,\&quot;dataCenterPublicIp\&quot;:\&quot;163.116.163.38\&quot;},{\&quot;expectedIpsecSaCount\&quot;:3,\&quot;ikeSaCount\&quot;:1,\&quot;enterpriseLogicalId\&quot;:\&quot;3ba2837f-4332-4d15-9b61-e1d0ecfb3b41\&quot;,\&quot;ipsecSaCount\&quot;:0,\&quot;dataCenterLogicalId\&quot;:\&quot;7c45dc7d-6568-4342-bb20-df53fdd85047\&quot;,\&quot;type\&quot;:\&quot;Generic Policy\&quot;,\&quot;dataCenterPublicIp\&quot;:\&quot;176.57.32.152\&quot;}]&quot;,
+          &quot;deviceId&quot;: &quot;10:16:10:12:20:00&quot;,
+          &quot;logicalId&quot;: &quot;gatewayee262fcb-6117-4ba9-b882-38ce8e21d547&quot;,
+          &quot;name&quot;: &quot;mlv-mlya-virt-vcg-01.celeste.fr&quot;,
+          &quot;gatewayState&quot;: &quot;CONNECTED&quot;,
+          &quot;alertsEnabled&quot;: 1,
+          &quot;description&quot;: &quot;&quot;,
+          &quot;dnsName&quot;: null,
+          &quot;isLoadBalanced&quot;: 0,
+          &quot;privateIpAddress&quot;: &quot;&quot;,
+          &quot;ipAddress&quot;: &quot;83.142.144.66&quot;,
+          &quot;ipV6Address&quot;: null,
+          &quot;lastContact&quot;: &quot;2026-02-20T14:20:39.000Z&quot;,
+          &quot;systemUpSince&quot;: &quot;2020-05-19T10:36:23.000Z&quot;,
+          &quot;serviceUpSince&quot;: &quot;2020-05-19T10:37:22.000Z&quot;,
+          &quot;serviceState&quot;: &quot;IN_SERVICE&quot;,
+          &quot;bastionState&quot;: &quot;UNCONFIGURED&quot;,
+          &quot;endpointPkiMode&quot;: &quot;CERTIFICATE_DISABLED&quot;,
+          &quot;handOffDetail&quot;: &quot;{\&quot;type\&quot;:\&quot;\&quot;,\&quot;subnets\&quot;:[{\&quot;name\&quot;:\&quot;\&quot;,\&quot;routeCost\&quot;:0,\&quot;cidrIp\&quot;:\&quot;10.0.0.0\&quot;,\&quot;cidrPrefix\&quot;:8,\&quot;encrypt\&quot;:true,\&quot;handOffType\&quot;:\&quot;VLAN\&quot;},{\&quot;name\&quot;:\&quot;\&quot;,\&quot;routeCost\&quot;:0,\&quot;cidrIp\&quot;:\&quot;172.16.0.0\&quot;,\&quot;cidrPrefix\&quot;:12,\&quot;encrypt\&quot;:true,\&quot;handOffType\&quot;:\&quot;VLAN\&quot;},{\&quot;name\&quot;:\&quot;\&quot;,\&quot;routeCost\&quot;:0,\&quot;cidrIp\&quot;:\&quot;192.168.0.0\&quot;,\&quot;cidrPrefix\&quot;:16,\&quot;encrypt\&quot;:true,\&quot;handOffType\&quot;:\&quot;VLAN\&quot;},{\&quot;name\&quot;:\&quot;all subnets\&quot;,\&quot;routeCost\&quot;:0,\&quot;cidrIp\&quot;:\&quot;0.0.0.0\&quot;,\&quot;cidrPrefix\&quot;:0,\&quot;encrypt\&quot;:false,\&quot;handOffType\&quot;:\&quot;NAT\&quot;},{\&quot;name\&quot;:\&quot;VCO\&quot;,\&quot;routeCost\&quot;:0,\&quot;cidrIp\&quot;:\&quot;52.58.77.253\&quot;,\&quot;cidrPrefix\&quot;:32,\&quot;encrypt\&quot;:true,\&quot;handOffType\&quot;:\&quot;NAT\&quot;}],\&quot;icmpProbe\&quot;:{\&quot;enabled\&quot;:false,\&quot;probeType\&quot;:\&quot;NONE\&quot;,\&quot;cTag\&quot;:0,\&quot;sTag\&quot;:0,\&quot;destinationIp\&quot;:\&quot;\&quot;,\&quot;frequencySeconds\&quot;:2,\&quot;threshold\&quot;:3},\&quot;icmpResponder\&quot;:{\&quot;enabled\&quot;:false,\&quot;ipAddress\&quot;:\&quot;\&quot;,\&quot;mode\&quot;:\&quot;conditional\&quot;},\&quot;v6Subnets\&quot;:[{\&quot;cidrIp\&quot;:\&quot;fc00::\&quot;,\&quot;cidrPrefix\&quot;:7,\&quot;name\&quot;:\&quot;\&quot;,\&quot;routeCost\&quot;:0,\&quot;handOffType\&quot;:\&quot;VLAN\&quot;,\&quot;encrypt\&quot;:true}]}&quot;,
+          &quot;ipsecGatewayDetail&quot;: &quot;{\&quot;enabled\&quot;:false,\&quot;strictHostCheck\&quot;:false,\&quot;strictHostCheckDN\&quot;:null}&quot;,
+          &quot;modified&quot;: &quot;2026-02-20T14:20:39.000Z&quot;,
+          &quot;globalConnectedEdges&quot;: null,
+          &quot;principle&quot;: null,
+          &quot;enterpriseObjectId&quot;: 1105
+        },
+        {
+          &quot;id&quot;: 12,
+          &quot;created&quot;: &quot;2020-05-03T23:45:55.000Z&quot;,
+          &quot;networkId&quot;: 1,
+          &quot;enterpriseProxyId&quot;: null,
+          &quot;siteId&quot;: 167,
+          &quot;activationKey&quot;: &quot;VE8V-ZFLP-QLW5-6GSE&quot;,
+          &quot;activationState&quot;: &quot;ACTIVATED&quot;,
+          &quot;activationTime&quot;: &quot;2020-05-26T09:38:48.000Z&quot;,
+          &quot;softwareVersion&quot;: &quot;3.4.1&quot;,
+          &quot;buildNumber&quot;: &quot;R341-20200410-GA-8695e50275&quot;,
+          &quot;utilization&quot;: 0.43,
+          &quot;utilizationDetail&quot;: &quot;{\&quot;load\&quot;:0.02875,\&quot;overall\&quot;:0.42700000000000005,\&quot;cpu\&quot;:0.008875,\&quot;memory\&quot;:0.42700000000000005}&quot;,
+          &quot;connectedEdges&quot;: 3,
+          &quot;connectedEdgeList&quot;: &quot;[{\&quot;vceid\&quot;:\&quot;189f00f4-bf02-47ff-bc85-e585e8358bbe\&quot;},{\&quot;vceid\&quot;:\&quot;21ae29bf-b7be-44c2-894b-effa52d4d568\&quot;},{\&quot;vceid\&quot;:\&quot;2f67058a-75a6-407c-a6d8-fb9dbcff138d\&quot;}]&quot;,
+          &quot;dataCenterVpnStates&quot;: &quot;[{\&quot;expectedIpsecSaCount\&quot;:1,\&quot;ikeSaCount\&quot;:1,\&quot;enterpriseLogicalId\&quot;:\&quot;94883fd9-a7f3-419e-8ceb-39d8b5d5c6a7\&quot;,\&quot;ipsecSaCount\&quot;:1,\&quot;dataCenterLogicalId\&quot;:\&quot;c431e3ca-1ae7-4397-9bca-716a8c63c1dc\&quot;,\&quot;type\&quot;:\&quot;Generic IKEv2 router\&quot;,\&quot;dataCenterPublicIp\&quot;:\&quot;163.116.176.38\&quot;},{\&quot;expectedIpsecSaCount\&quot;:1,\&quot;ikeSaCount\&quot;:0,\&quot;enterpriseLogicalId\&quot;:\&quot;94883fd9-a7f3-419e-8ceb-39d8b5d5c6a7\&quot;,\&quot;ipsecSaCount\&quot;:1,\&quot;dataCenterLogicalId\&quot;:\&quot;c431e3ca-1ae7-4397-9bca-716a8c63c1dc\&quot;,\&quot;type\&quot;:\&quot;Generic IKEv2 router\&quot;,\&quot;dataCenterPublicIp\&quot;:\&quot;163.116.163.38\&quot;}]&quot;,
+          &quot;deviceId&quot;: &quot;10:16:12:12:20:00&quot;,
+          &quot;logicalId&quot;: &quot;gateway1886f588-dccb-4264-868f-6a92b7e209b9&quot;,
+          &quot;name&quot;: &quot;cbv-pa7-virt-vcg-01.celeste.fr&quot;,
+          &quot;gatewayState&quot;: &quot;CONNECTED&quot;,
+          &quot;alertsEnabled&quot;: 1,
+          &quot;description&quot;: &quot;&quot;,
+          &quot;dnsName&quot;: null,
+          &quot;isLoadBalanced&quot;: 0,
+          &quot;privateIpAddress&quot;: &quot;&quot;,
+          &quot;ipAddress&quot;: &quot;83.142.144.70&quot;,
+          &quot;ipV6Address&quot;: null,
+          &quot;lastContact&quot;: &quot;2026-02-20T14:20:54.000Z&quot;,
+          &quot;systemUpSince&quot;: &quot;2020-05-26T09:40:19.000Z&quot;,
+          &quot;serviceUpSince&quot;: &quot;2020-05-26T09:41:18.000Z&quot;,
+          &quot;serviceState&quot;: &quot;IN_SERVICE&quot;,
+          &quot;bastionState&quot;: &quot;UNCONFIGURED&quot;,
+          &quot;endpointPkiMode&quot;: &quot;CERTIFICATE_DISABLED&quot;,
+          &quot;handOffDetail&quot;: &quot;{\&quot;type\&quot;:\&quot;\&quot;,\&quot;subnets\&quot;:[{\&quot;name\&quot;:\&quot;\&quot;,\&quot;routeCost\&quot;:0,\&quot;cidrIp\&quot;:\&quot;10.0.0.0\&quot;,\&quot;cidrPrefix\&quot;:8,\&quot;encrypt\&quot;:true,\&quot;handOffType\&quot;:\&quot;VLAN\&quot;},{\&quot;name\&quot;:\&quot;\&quot;,\&quot;routeCost\&quot;:0,\&quot;cidrIp\&quot;:\&quot;172.16.0.0\&quot;,\&quot;cidrPrefix\&quot;:12,\&quot;encrypt\&quot;:true,\&quot;handOffType\&quot;:\&quot;VLAN\&quot;},{\&quot;name\&quot;:\&quot;\&quot;,\&quot;routeCost\&quot;:0,\&quot;cidrIp\&quot;:\&quot;192.168.0.0\&quot;,\&quot;cidrPrefix\&quot;:16,\&quot;encrypt\&quot;:true,\&quot;handOffType\&quot;:\&quot;VLAN\&quot;},{\&quot;name\&quot;:\&quot;all subnets\&quot;,\&quot;routeCost\&quot;:0,\&quot;cidrIp\&quot;:\&quot;0.0.0.0\&quot;,\&quot;cidrPrefix\&quot;:0,\&quot;encrypt\&quot;:false,\&quot;handOffType\&quot;:\&quot;NAT\&quot;},{\&quot;name\&quot;:\&quot;VCO\&quot;,\&quot;routeCost\&quot;:0,\&quot;cidrIp\&quot;:\&quot;52.58.77.253\&quot;,\&quot;cidrPrefix\&quot;:32,\&quot;encrypt\&quot;:true,\&quot;handOffType\&quot;:\&quot;NAT\&quot;}],\&quot;icmpProbe\&quot;:{\&quot;enabled\&quot;:false,\&quot;probeType\&quot;:\&quot;NONE\&quot;,\&quot;cTag\&quot;:0,\&quot;sTag\&quot;:0,\&quot;destinationIp\&quot;:\&quot;\&quot;,\&quot;frequencySeconds\&quot;:2,\&quot;threshold\&quot;:3},\&quot;icmpResponder\&quot;:{\&quot;enabled\&quot;:false,\&quot;ipAddress\&quot;:\&quot;\&quot;,\&quot;mode\&quot;:\&quot;conditional\&quot;},\&quot;v6Subnets\&quot;:[{\&quot;cidrIp\&quot;:\&quot;fc00::\&quot;,\&quot;cidrPrefix\&quot;:7,\&quot;name\&quot;:\&quot;\&quot;,\&quot;routeCost\&quot;:0,\&quot;handOffType\&quot;:\&quot;VLAN\&quot;,\&quot;encrypt\&quot;:true}]}&quot;,
+          &quot;ipsecGatewayDetail&quot;: &quot;{\&quot;enabled\&quot;:false,\&quot;strictHostCheck\&quot;:false,\&quot;strictHostCheckDN\&quot;:null}&quot;,
+          &quot;modified&quot;: &quot;2026-02-20T14:20:54.000Z&quot;,
+          &quot;globalConnectedEdges&quot;: null,
+          &quot;principle&quot;: null,
+          &quot;enterpriseObjectId&quot;: 1105
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 1109,
+      &quot;created&quot;: &quot;2026-02-20T13:39:44.000Z&quot;,
+      &quot;operatorId&quot;: null,
+      &quot;networkId&quot;: null,
+      &quot;enterpriseId&quot;: 71,
+      &quot;edgeId&quot;: null,
+      &quot;gatewayId&quot;: null,
+      &quot;parentGroupId&quot;: null,
+      &quot;description&quot;: null,
+      &quot;object&quot;: &quot;NETWORK_SERVICE&quot;,
+      &quot;name&quot;: &quot;NETSKOPE TUNNEL 2&quot;,
+      &quot;type&quot;: &quot;dataCenter&quot;,
+      &quot;logicalId&quot;: &quot;4ed8038b-441c-4a6a-b7e4-5be1565202cf&quot;,
+      &quot;alertsEnabled&quot;: 1,
+      &quot;operatorAlertsEnabled&quot;: 1,
+      &quot;status&quot;: null,
+      &quot;statusModified&quot;: &quot;0000-00-00 00:00:00&quot;,
+      &quot;previousData&quot;: null,
+      &quot;previousCreated&quot;: &quot;0000-00-00 00:00:00&quot;,
+      &quot;draftData&quot;: null,
+      &quot;draftCreated&quot;: &quot;0000-00-00 00:00:00&quot;,
+      &quot;draftComment&quot;: null,
+      &quot;data&quot;: {
+        &quot;tunnelMode&quot;: &quot;ACTIVE_HOT_STANDBY&quot;,
+        &quot;loadSharingMethod&quot;: {
+          &quot;algo&quot;: &quot;&quot;,
+          &quot;hashParams&quot;: {
+            &quot;srcIp&quot;: false,
+            &quot;destIp&quot;: false,
+            &quot;srcPort&quot;: false,
+            &quot;destPort&quot;: false,
+            &quot;protocol&quot;: false
+          }
+        },
+        &quot;primary&quot;: {
+          &quot;dataCenterPublicIp&quot;: &quot;1.1.1.1&quot;,
+          &quot;redundant&quot;: {
+            &quot;dataCenterPublicIp&quot;: &quot;1.1.1.1&quot;,
+            &quot;type&quot;: &quot;GenericIKEv2Router&quot;,
+            &quot;typeAlias&quot;: &quot;GenericIKEv2Router&quot;,
+            &quot;disabled&quot;: true,
+            &quot;gatewayPublicIp&quot;: &quot;83.142.144.70&quot;,
+            &quot;IKESA&quot;: {
+              &quot;ikeVersion&quot;: 2,
+              &quot;ikeId&quot;: null,
+              &quot;ikeInitiator&quot;: &quot;both&quot;,
+              &quot;authenticationMethod&quot;: &quot;PSK&quot;,
+              &quot;sharedKeyType&quot;: &quot;hex&quot;,
+              &quot;sharedKey&quot;: &quot;{ENCRYPTED}eyJjb250ZW50IjoiMWE0N2FmZDUzNTFlNmRlMmUyNTViMDVhODM5OTBhMTVjM2U1OGI1NGVmYjMxM2FkMzczMWJhMjQ2ZTA4ZDY1MDU5MDY1YjI4ZTEyZDIyMTUiLCJ0YWciOiJjNzdmNGU3ZjE2NGFkMzAyMTY0MjIyMzEzMTYyODg0MSIsIml2IjoiNzkzMTU4NmY3YThiNGJjNTA0YzJjNThmZTQ2NmFjZmIiLCJzYWx0IjoiNjAxYzRlZGU5YWU3ZjJmMDhmZDFkMGExIn0&quot;,
+              &quot;authenticationAlgorithm&quot;: &quot;SHA1&quot;,
+              &quot;lifeTimeSeconds&quot;: 86400,
+              &quot;phaseOneNegotiationMode&quot;: &quot;main&quot;,
+              &quot;DHGroup&quot;: 2,
+              &quot;authenticationTimeSeconds&quot;: 172800
+            },
+            &quot;IPSECSA&quot;: {
+              &quot;protocol&quot;: &quot;ESP&quot;,
+              &quot;authenticationAlgorithm&quot;: &quot;SHA_1&quot;,
+              &quot;encryptionAlgorithm&quot;: &quot;AES-128-CBC&quot;,
+              &quot;lifeTimeSeconds&quot;: 28800,
+              &quot;mode&quot;: &quot;tunnel&quot;,
+              &quot;perfectForwardSecurity&quot;: &quot;2&quot;
+            },
+            &quot;IPSECDPD&quot;: {
+              &quot;type&quot;: &quot;onDemand&quot;,
+              &quot;intervalSeconds&quot;: 10,
+              &quot;dpdTimeoutSeconds&quot;: 20,
+              &quot;retries&quot;: 3
+            },
+            &quot;fragmentationAvoidance&quot;: {
+              &quot;tcpMssAdjustmentBytes&quot;: 1320,
+              &quot;clearDontFragmentBit&quot;: &quot;enabled&quot;,
+              &quot;fragmentationStyle&quot;: &quot;Before Encryption / Look Ahead Fragmention&quot;
+            },
+            &quot;tunnelInterface&quot;: {
+              &quot;MTU&quot;: 1328
+            },
+            &quot;dataCenterLinkIp&quot;: &quot;169.254.0.26&quot;,
+            &quot;gatewayLinkIp&quot;: &quot;169.254.0.25&quot;
+          },
+          &quot;type&quot;: &quot;GenericIKEv2Router&quot;,
+          &quot;typeAlias&quot;: &quot;GenericIKEv2Router&quot;,
+          &quot;version&quot;: &quot;1771594784158&quot;,
+          &quot;disabled&quot;: false,
+          &quot;gatewayPublicIp&quot;: &quot;83.142.144.66&quot;,
+          &quot;IKESA&quot;: {
+            &quot;ikeVersion&quot;: 2,
+            &quot;ikeId&quot;: null,
+            &quot;ikeInitiator&quot;: &quot;both&quot;,
+            &quot;authenticationMethod&quot;: &quot;PSK&quot;,
+            &quot;sharedKeyType&quot;: &quot;hex&quot;,
+            &quot;sharedKey&quot;: &quot;{ENCRYPTED}eyJjb250ZW50IjoiZWRjMzEyMTYxNzFlNzFmYTZiMjcyMjAxY2MwOGY5NTIzMGNjOWIwOTA2NDMwZTRjYjIwYjhlMTFhMDU5M2IxYzQxMzdlZTUyMzBlNDc1YjkiLCJ0YWciOiIwNzU5NjA4OWU3NzQxZDk1ODhiNmMxZjFiZjk4OTE1NiIsIml2IjoiNTkyMzliNjJkNjUyMzI1MWE5MjExNzZhYzQ2ZTNmZTQiLCJzYWx0IjoiNjViOTQ3YjQyZTExMDI4MTk0YTViNmEzIn0&quot;,
+            &quot;authenticationAlgorithm&quot;: &quot;SHA1&quot;,
+            &quot;lifeTimeSeconds&quot;: 86400,
+            &quot;phaseOneNegotiationMode&quot;: &quot;main&quot;,
+            &quot;DHGroup&quot;: 2,
+            &quot;authenticationTimeSeconds&quot;: 172800
+          },
+          &quot;IPSECSA&quot;: {
+            &quot;protocol&quot;: &quot;ESP&quot;,
+            &quot;authenticationAlgorithm&quot;: &quot;SHA_1&quot;,
+            &quot;encryptionAlgorithm&quot;: &quot;AES-128-CBC&quot;,
+            &quot;lifeTimeSeconds&quot;: 28800,
+            &quot;mode&quot;: &quot;tunnel&quot;,
+            &quot;perfectForwardSecurity&quot;: &quot;2&quot;
+          },
+          &quot;IPSECDPD&quot;: {
+            &quot;type&quot;: &quot;onDemand&quot;,
+            &quot;intervalSeconds&quot;: 10,
+            &quot;dpdTimeoutSeconds&quot;: 20,
+            &quot;retries&quot;: 3
+          },
+          &quot;fragmentationAvoidance&quot;: {
+            &quot;tcpMssAdjustmentBytes&quot;: 1320,
+            &quot;clearDontFragmentBit&quot;: &quot;enabled&quot;,
+            &quot;fragmentationStyle&quot;: &quot;Before Encryption / Look Ahead Fragmention&quot;
+          },
+          &quot;tunnelInterface&quot;: {
+            &quot;MTU&quot;: 1328
+          },
+          &quot;geoData&quot;: {
+            &quot;target&quot;: &quot;1.1.1.1&quot;,
+            &quot;areaCode&quot;: &quot;&quot;,
+            &quot;countryCode&quot;: &quot;&quot;,
+            &quot;regionCode&quot;: &quot;&quot;,
+            &quot;continent&quot;: &quot;&quot;,
+            &quot;city&quot;: &quot;&quot;,
+            &quot;postalCode&quot;: &quot;&quot;,
+            &quot;latitude&quot;: 0,
+            &quot;longitude&quot;: 0,
+            &quot;metroCode&quot;: 0,
+            &quot;timeZone&quot;: &quot;&quot;,
+            &quot;isp&quot;: &quot;Cloudflare&quot;,
+            &quot;org&quot;: &quot;Cloudflare&quot;
+          },
+          &quot;dataCenterLinkIp&quot;: &quot;169.254.0.18&quot;,
+          &quot;gatewayLinkIp&quot;: &quot;169.254.0.17&quot;
+        },
+        &quot;secondary&quot;: {
+          &quot;dataCenterPublicIp&quot;: &quot;2.2.2.2&quot;,
+          &quot;redundant&quot;: {
+            &quot;dataCenterPublicIp&quot;: &quot;2.2.2.2&quot;,
+            &quot;type&quot;: &quot;GenericIKEv2Router&quot;,
+            &quot;disabled&quot;: true,
+            &quot;gatewayPublicIp&quot;: &quot;83.142.144.70&quot;,
+            &quot;IKESA&quot;: {
+              &quot;ikeVersion&quot;: 2,
+              &quot;ikeId&quot;: null,
+              &quot;ikeInitiator&quot;: &quot;both&quot;,
+              &quot;authenticationMethod&quot;: &quot;PSK&quot;,
+              &quot;sharedKeyType&quot;: &quot;hex&quot;,
+              &quot;sharedKey&quot;: &quot;{ENCRYPTED}eyJjb250ZW50IjoiMjgwNzYzOGRjMjVmMTE4OWI4ODdjY2U1NmJiZTVkZjQyOGZjNmM1ZDFhMDZjODZjOGM5OTFkNzNmMDk1NmUyNzQyYWZhNjdiMzE0NTE2ZDQiLCJ0YWciOiI5Zjc4NmRmN2FhNDY5Y2ZhMDE1ZGUwNGJjMWU1Mjc5NyIsIml2IjoiYjA0MTlkMmY3Nzk4NGU3NTRhMjk2MmEwNWJkZGJlZGUiLCJzYWx0IjoiYmJiOTQ1ZWEzNmM5MjllMDE4NzYyMzk5In0&quot;,
+              &quot;authenticationAlgorithm&quot;: &quot;SHA1&quot;,
+              &quot;lifeTimeSeconds&quot;: 86400,
+              &quot;phaseOneNegotiationMode&quot;: &quot;main&quot;,
+              &quot;DHGroup&quot;: 2,
+              &quot;authenticationTimeSeconds&quot;: 172800
+            },
+            &quot;IPSECSA&quot;: {
+              &quot;protocol&quot;: &quot;ESP&quot;,
+              &quot;authenticationAlgorithm&quot;: &quot;SHA_1&quot;,
+              &quot;encryptionAlgorithm&quot;: &quot;AES-128-CBC&quot;,
+              &quot;lifeTimeSeconds&quot;: 28800,
+              &quot;mode&quot;: &quot;tunnel&quot;,
+              &quot;perfectForwardSecurity&quot;: &quot;2&quot;
+            },
+            &quot;IPSECDPD&quot;: {
+              &quot;type&quot;: &quot;onDemand&quot;,
+              &quot;intervalSeconds&quot;: 10,
+              &quot;dpdTimeoutSeconds&quot;: 20,
+              &quot;retries&quot;: 3
+            },
+            &quot;fragmentationAvoidance&quot;: {
+              &quot;tcpMssAdjustmentBytes&quot;: 1320,
+              &quot;clearDontFragmentBit&quot;: &quot;enabled&quot;,
+              &quot;fragmentationStyle&quot;: &quot;Before Encryption / Look Ahead Fragmention&quot;
+            },
+            &quot;tunnelInterface&quot;: {
+              &quot;MTU&quot;: 1328
+            },
+            &quot;dataCenterLinkIp&quot;: &quot;169.254.0.30&quot;,
+            &quot;gatewayLinkIp&quot;: &quot;169.254.0.29&quot;
+          },
+          &quot;type&quot;: &quot;GenericIKEv2Router&quot;,
+          &quot;version&quot;: &quot;1771594784158&quot;,
+          &quot;disabled&quot;: false,
+          &quot;gatewayPublicIp&quot;: &quot;83.142.144.66&quot;,
+          &quot;IKESA&quot;: {
+            &quot;ikeVersion&quot;: 2,
+            &quot;ikeId&quot;: null,
+            &quot;ikeInitiator&quot;: &quot;both&quot;,
+            &quot;authenticationMethod&quot;: &quot;PSK&quot;,
+            &quot;sharedKeyType&quot;: &quot;hex&quot;,
+            &quot;sharedKey&quot;: &quot;{ENCRYPTED}eyJjb250ZW50IjoiY2JkNGQ3NGE1NTI4MmM1N2E2MzI5NjlmMjJlYTY5ZTQ3OTc4ZjZlYjVhZjYyZGRmMjlkMDEzOWNjYThjMjQ3ZDE1OWUzY2UxYmU5YjAwMjgiLCJ0YWciOiIyMmQxMTAwODk2ZGFmZTkyMTgyMGYzZmI3NGM5N2MzYyIsIml2IjoiOGU1MmU3NmVkOGNkMWRlN2Y2OTllMTAyNmNhYzYwNTEiLCJzYWx0IjoiODk2NjViZWU5MWRmN2YzOGMyN2VhMzI0In0&quot;,
+            &quot;authenticationAlgorithm&quot;: &quot;SHA1&quot;,
+            &quot;lifeTimeSeconds&quot;: 86400,
+            &quot;phaseOneNegotiationMode&quot;: &quot;main&quot;,
+            &quot;DHGroup&quot;: 2,
+            &quot;authenticationTimeSeconds&quot;: 172800
+          },
+          &quot;IPSECSA&quot;: {
+            &quot;protocol&quot;: &quot;ESP&quot;,
+            &quot;authenticationAlgorithm&quot;: &quot;SHA_1&quot;,
+            &quot;encryptionAlgorithm&quot;: &quot;AES-128-CBC&quot;,
+            &quot;lifeTimeSeconds&quot;: 28800,
+            &quot;mode&quot;: &quot;tunnel&quot;,
+            &quot;perfectForwardSecurity&quot;: &quot;2&quot;
+          },
+          &quot;IPSECDPD&quot;: {
+            &quot;type&quot;: &quot;onDemand&quot;,
+            &quot;intervalSeconds&quot;: 10,
+            &quot;dpdTimeoutSeconds&quot;: 20,
+            &quot;retries&quot;: 3
+          },
+          &quot;fragmentationAvoidance&quot;: {
+            &quot;tcpMssAdjustmentBytes&quot;: 1320,
+            &quot;clearDontFragmentBit&quot;: &quot;enabled&quot;,
+            &quot;fragmentationStyle&quot;: &quot;Before Encryption / Look Ahead Fragmention&quot;
+          },
+          &quot;tunnelInterface&quot;: {
+            &quot;MTU&quot;: 1328
+          },
+          &quot;geoData&quot;: {
+            &quot;target&quot;: &quot;2.2.2.2&quot;,
+            &quot;areaCode&quot;: &quot;&quot;,
+            &quot;countryCode&quot;: &quot;SE&quot;,
+            &quot;regionCode&quot;: &quot;&quot;,
+            &quot;continent&quot;: &quot;EU&quot;,
+            &quot;city&quot;: &quot;&quot;,
+            &quot;postalCode&quot;: &quot;&quot;,
+            &quot;latitude&quot;: 59.3247,
+            &quot;longitude&quot;: 18.056,
+            &quot;metroCode&quot;: &quot;&quot;,
+            &quot;timeZone&quot;: &quot;&quot;,
+            &quot;isp&quot;: &quot;&quot;,
+            &quot;org&quot;: &quot;&quot;
+          },
+          &quot;dataCenterLinkIp&quot;: &quot;169.254.0.22&quot;,
+          &quot;gatewayLinkIp&quot;: &quot;169.254.0.21&quot;
+        },
+        &quot;isCDE&quot;: false,
+        &quot;datacenterVersion&quot;: &quot;1771594784160&quot;
+      },
+      &quot;lastContact&quot;: &quot;0000-00-00 00:00:00&quot;,
+      &quot;version&quot;: &quot;1771594784323&quot;,
+      &quot;modified&quot;: &quot;2026-02-20T13:39:44.000Z&quot;,
+      &quot;profileCount&quot;: 0,
+      &quot;edgeUsage&quot;: [],
+      &quot;edgeCount&quot;: 0,
+      &quot;edgeQOSUsage&quot;: [],
+      &quot;configuration&quot;: [],
+      &quot;groupCount&quot;: 0,
+      &quot;gateways&quot;: [
+        {
+          &quot;id&quot;: 11,
+          &quot;created&quot;: &quot;2020-05-03T23:39:04.000Z&quot;,
+          &quot;networkId&quot;: 1,
+          &quot;enterpriseProxyId&quot;: null,
+          &quot;siteId&quot;: 166,
+          &quot;activationKey&quot;: &quot;YJWE-9QSX-DAQW-X2X9&quot;,
+          &quot;activationState&quot;: &quot;ACTIVATED&quot;,
+          &quot;activationTime&quot;: &quot;2020-05-19T10:34:54.000Z&quot;,
+          &quot;softwareVersion&quot;: &quot;3.4.1&quot;,
+          &quot;buildNumber&quot;: &quot;R341-20200410-GA-8695e50275&quot;,
+          &quot;utilization&quot;: 0.42,
+          &quot;utilizationDetail&quot;: &quot;{\&quot;load\&quot;:0.015,\&quot;overall\&quot;:0.424,\&quot;cpu\&quot;:0.0195,\&quot;memory\&quot;:0.424}&quot;,
+          &quot;connectedEdges&quot;: 1,
+          &quot;connectedEdgeList&quot;: &quot;[{\&quot;vceid\&quot;:\&quot;189f00f4-bf02-47ff-bc85-e585e8358bbe\&quot;}]&quot;,
+          &quot;dataCenterVpnStates&quot;: &quot;[{\&quot;expectedIpsecSaCount\&quot;:1,\&quot;ikeSaCount\&quot;:1,\&quot;enterpriseLogicalId\&quot;:\&quot;94883fd9-a7f3-419e-8ceb-39d8b5d5c6a7\&quot;,\&quot;ipsecSaCount\&quot;:1,\&quot;dataCenterLogicalId\&quot;:\&quot;c431e3ca-1ae7-4397-9bca-716a8c63c1dc\&quot;,\&quot;type\&quot;:\&quot;Generic IKEv2 router\&quot;,\&quot;dataCenterPublicIp\&quot;:\&quot;163.116.176.38\&quot;},{\&quot;expectedIpsecSaCount\&quot;:1,\&quot;ikeSaCount\&quot;:0,\&quot;enterpriseLogicalId\&quot;:\&quot;94883fd9-a7f3-419e-8ceb-39d8b5d5c6a7\&quot;,\&quot;ipsecSaCount\&quot;:1,\&quot;dataCenterLogicalId\&quot;:\&quot;c431e3ca-1ae7-4397-9bca-716a8c63c1dc\&quot;,\&quot;type\&quot;:\&quot;Generic IKEv2 router\&quot;,\&quot;dataCenterPublicIp\&quot;:\&quot;163.116.163.38\&quot;},{\&quot;expectedIpsecSaCount\&quot;:3,\&quot;ikeSaCount\&quot;:1,\&quot;enterpriseLogicalId\&quot;:\&quot;3ba2837f-4332-4d15-9b61-e1d0ecfb3b41\&quot;,\&quot;ipsecSaCount\&quot;:0,\&quot;dataCenterLogicalId\&quot;:\&quot;7c45dc7d-6568-4342-bb20-df53fdd85047\&quot;,\&quot;type\&quot;:\&quot;Generic Policy\&quot;,\&quot;dataCenterPublicIp\&quot;:\&quot;176.57.32.152\&quot;}]&quot;,
+          &quot;deviceId&quot;: &quot;10:16:10:12:20:00&quot;,
+          &quot;logicalId&quot;: &quot;gatewayee262fcb-6117-4ba9-b882-38ce8e21d547&quot;,
+          &quot;name&quot;: &quot;mlv-mlya-virt-vcg-01.celeste.fr&quot;,
+          &quot;gatewayState&quot;: &quot;CONNECTED&quot;,
+          &quot;alertsEnabled&quot;: 1,
+          &quot;description&quot;: &quot;&quot;,
+          &quot;dnsName&quot;: null,
+          &quot;isLoadBalanced&quot;: 0,
+          &quot;privateIpAddress&quot;: &quot;&quot;,
+          &quot;ipAddress&quot;: &quot;83.142.144.66&quot;,
+          &quot;ipV6Address&quot;: null,
+          &quot;lastContact&quot;: &quot;2026-02-20T14:20:39.000Z&quot;,
+          &quot;systemUpSince&quot;: &quot;2020-05-19T10:36:23.000Z&quot;,
+          &quot;serviceUpSince&quot;: &quot;2020-05-19T10:37:22.000Z&quot;,
+          &quot;serviceState&quot;: &quot;IN_SERVICE&quot;,
+          &quot;bastionState&quot;: &quot;UNCONFIGURED&quot;,
+          &quot;endpointPkiMode&quot;: &quot;CERTIFICATE_DISABLED&quot;,
+          &quot;handOffDetail&quot;: &quot;{\&quot;type\&quot;:\&quot;\&quot;,\&quot;subnets\&quot;:[{\&quot;name\&quot;:\&quot;\&quot;,\&quot;routeCost\&quot;:0,\&quot;cidrIp\&quot;:\&quot;10.0.0.0\&quot;,\&quot;cidrPrefix\&quot;:8,\&quot;encrypt\&quot;:true,\&quot;handOffType\&quot;:\&quot;VLAN\&quot;},{\&quot;name\&quot;:\&quot;\&quot;,\&quot;routeCost\&quot;:0,\&quot;cidrIp\&quot;:\&quot;172.16.0.0\&quot;,\&quot;cidrPrefix\&quot;:12,\&quot;encrypt\&quot;:true,\&quot;handOffType\&quot;:\&quot;VLAN\&quot;},{\&quot;name\&quot;:\&quot;\&quot;,\&quot;routeCost\&quot;:0,\&quot;cidrIp\&quot;:\&quot;192.168.0.0\&quot;,\&quot;cidrPrefix\&quot;:16,\&quot;encrypt\&quot;:true,\&quot;handOffType\&quot;:\&quot;VLAN\&quot;},{\&quot;name\&quot;:\&quot;all subnets\&quot;,\&quot;routeCost\&quot;:0,\&quot;cidrIp\&quot;:\&quot;0.0.0.0\&quot;,\&quot;cidrPrefix\&quot;:0,\&quot;encrypt\&quot;:false,\&quot;handOffType\&quot;:\&quot;NAT\&quot;},{\&quot;name\&quot;:\&quot;VCO\&quot;,\&quot;routeCost\&quot;:0,\&quot;cidrIp\&quot;:\&quot;52.58.77.253\&quot;,\&quot;cidrPrefix\&quot;:32,\&quot;encrypt\&quot;:true,\&quot;handOffType\&quot;:\&quot;NAT\&quot;}],\&quot;icmpProbe\&quot;:{\&quot;enabled\&quot;:false,\&quot;probeType\&quot;:\&quot;NONE\&quot;,\&quot;cTag\&quot;:0,\&quot;sTag\&quot;:0,\&quot;destinationIp\&quot;:\&quot;\&quot;,\&quot;frequencySeconds\&quot;:2,\&quot;threshold\&quot;:3},\&quot;icmpResponder\&quot;:{\&quot;enabled\&quot;:false,\&quot;ipAddress\&quot;:\&quot;\&quot;,\&quot;mode\&quot;:\&quot;conditional\&quot;},\&quot;v6Subnets\&quot;:[{\&quot;cidrIp\&quot;:\&quot;fc00::\&quot;,\&quot;cidrPrefix\&quot;:7,\&quot;name\&quot;:\&quot;\&quot;,\&quot;routeCost\&quot;:0,\&quot;handOffType\&quot;:\&quot;VLAN\&quot;,\&quot;encrypt\&quot;:true}]}&quot;,
+          &quot;ipsecGatewayDetail&quot;: &quot;{\&quot;enabled\&quot;:false,\&quot;strictHostCheck\&quot;:false,\&quot;strictHostCheckDN\&quot;:null}&quot;,
+          &quot;modified&quot;: &quot;2026-02-20T14:20:39.000Z&quot;,
+          &quot;globalConnectedEdges&quot;: null,
+          &quot;principle&quot;: null,
+          &quot;enterpriseObjectId&quot;: 1109
+        },
+        {
+          &quot;id&quot;: 12,
+          &quot;created&quot;: &quot;2020-05-03T23:45:55.000Z&quot;,
+          &quot;networkId&quot;: 1,
+          &quot;enterpriseProxyId&quot;: null,
+          &quot;siteId&quot;: 167,
+          &quot;activationKey&quot;: &quot;VE8V-ZFLP-QLW5-6GSE&quot;,
+          &quot;activationState&quot;: &quot;ACTIVATED&quot;,
+          &quot;activationTime&quot;: &quot;2020-05-26T09:38:48.000Z&quot;,
+          &quot;softwareVersion&quot;: &quot;3.4.1&quot;,
+          &quot;buildNumber&quot;: &quot;R341-20200410-GA-8695e50275&quot;,
+          &quot;utilization&quot;: 0.43,
+          &quot;utilizationDetail&quot;: &quot;{\&quot;load\&quot;:0.02875,\&quot;overall\&quot;:0.42700000000000005,\&quot;cpu\&quot;:0.008875,\&quot;memory\&quot;:0.42700000000000005}&quot;,
+          &quot;connectedEdges&quot;: 3,
+          &quot;connectedEdgeList&quot;: &quot;[{\&quot;vceid\&quot;:\&quot;189f00f4-bf02-47ff-bc85-e585e8358bbe\&quot;},{\&quot;vceid\&quot;:\&quot;21ae29bf-b7be-44c2-894b-effa52d4d568\&quot;},{\&quot;vceid\&quot;:\&quot;2f67058a-75a6-407c-a6d8-fb9dbcff138d\&quot;}]&quot;,
+          &quot;dataCenterVpnStates&quot;: &quot;[{\&quot;expectedIpsecSaCount\&quot;:1,\&quot;ikeSaCount\&quot;:1,\&quot;enterpriseLogicalId\&quot;:\&quot;94883fd9-a7f3-419e-8ceb-39d8b5d5c6a7\&quot;,\&quot;ipsecSaCount\&quot;:1,\&quot;dataCenterLogicalId\&quot;:\&quot;c431e3ca-1ae7-4397-9bca-716a8c63c1dc\&quot;,\&quot;type\&quot;:\&quot;Generic IKEv2 router\&quot;,\&quot;dataCenterPublicIp\&quot;:\&quot;163.116.176.38\&quot;},{\&quot;expectedIpsecSaCount\&quot;:1,\&quot;ikeSaCount\&quot;:0,\&quot;enterpriseLogicalId\&quot;:\&quot;94883fd9-a7f3-419e-8ceb-39d8b5d5c6a7\&quot;,\&quot;ipsecSaCount\&quot;:1,\&quot;dataCenterLogicalId\&quot;:\&quot;c431e3ca-1ae7-4397-9bca-716a8c63c1dc\&quot;,\&quot;type\&quot;:\&quot;Generic IKEv2 router\&quot;,\&quot;dataCenterPublicIp\&quot;:\&quot;163.116.163.38\&quot;}]&quot;,
+          &quot;deviceId&quot;: &quot;10:16:12:12:20:00&quot;,
+          &quot;logicalId&quot;: &quot;gateway1886f588-dccb-4264-868f-6a92b7e209b9&quot;,
+          &quot;name&quot;: &quot;cbv-pa7-virt-vcg-01.celeste.fr&quot;,
+          &quot;gatewayState&quot;: &quot;CONNECTED&quot;,
+          &quot;alertsEnabled&quot;: 1,
+          &quot;description&quot;: &quot;&quot;,
+          &quot;dnsName&quot;: null,
+          &quot;isLoadBalanced&quot;: 0,
+          &quot;privateIpAddress&quot;: &quot;&quot;,
+          &quot;ipAddress&quot;: &quot;83.142.144.70&quot;,
+          &quot;ipV6Address&quot;: null,
+          &quot;lastContact&quot;: &quot;2026-02-20T14:20:54.000Z&quot;,
+          &quot;systemUpSince&quot;: &quot;2020-05-26T09:40:19.000Z&quot;,
+          &quot;serviceUpSince&quot;: &quot;2020-05-26T09:41:18.000Z&quot;,
+          &quot;serviceState&quot;: &quot;IN_SERVICE&quot;,
+          &quot;bastionState&quot;: &quot;UNCONFIGURED&quot;,
+          &quot;endpointPkiMode&quot;: &quot;CERTIFICATE_DISABLED&quot;,
+          &quot;handOffDetail&quot;: &quot;{\&quot;type\&quot;:\&quot;\&quot;,\&quot;subnets\&quot;:[{\&quot;name\&quot;:\&quot;\&quot;,\&quot;routeCost\&quot;:0,\&quot;cidrIp\&quot;:\&quot;10.0.0.0\&quot;,\&quot;cidrPrefix\&quot;:8,\&quot;encrypt\&quot;:true,\&quot;handOffType\&quot;:\&quot;VLAN\&quot;},{\&quot;name\&quot;:\&quot;\&quot;,\&quot;routeCost\&quot;:0,\&quot;cidrIp\&quot;:\&quot;172.16.0.0\&quot;,\&quot;cidrPrefix\&quot;:12,\&quot;encrypt\&quot;:true,\&quot;handOffType\&quot;:\&quot;VLAN\&quot;},{\&quot;name\&quot;:\&quot;\&quot;,\&quot;routeCost\&quot;:0,\&quot;cidrIp\&quot;:\&quot;192.168.0.0\&quot;,\&quot;cidrPrefix\&quot;:16,\&quot;encrypt\&quot;:true,\&quot;handOffType\&quot;:\&quot;VLAN\&quot;},{\&quot;name\&quot;:\&quot;all subnets\&quot;,\&quot;routeCost\&quot;:0,\&quot;cidrIp\&quot;:\&quot;0.0.0.0\&quot;,\&quot;cidrPrefix\&quot;:0,\&quot;encrypt\&quot;:false,\&quot;handOffType\&quot;:\&quot;NAT\&quot;},{\&quot;name\&quot;:\&quot;VCO\&quot;,\&quot;routeCost\&quot;:0,\&quot;cidrIp\&quot;:\&quot;52.58.77.253\&quot;,\&quot;cidrPrefix\&quot;:32,\&quot;encrypt\&quot;:true,\&quot;handOffType\&quot;:\&quot;NAT\&quot;}],\&quot;icmpProbe\&quot;:{\&quot;enabled\&quot;:false,\&quot;probeType\&quot;:\&quot;NONE\&quot;,\&quot;cTag\&quot;:0,\&quot;sTag\&quot;:0,\&quot;destinationIp\&quot;:\&quot;\&quot;,\&quot;frequencySeconds\&quot;:2,\&quot;threshold\&quot;:3},\&quot;icmpResponder\&quot;:{\&quot;enabled\&quot;:false,\&quot;ipAddress\&quot;:\&quot;\&quot;,\&quot;mode\&quot;:\&quot;conditional\&quot;},\&quot;v6Subnets\&quot;:[{\&quot;cidrIp\&quot;:\&quot;fc00::\&quot;,\&quot;cidrPrefix\&quot;:7,\&quot;name\&quot;:\&quot;\&quot;,\&quot;routeCost\&quot;:0,\&quot;handOffType\&quot;:\&quot;VLAN\&quot;,\&quot;encrypt\&quot;:true}]}&quot;,
+          &quot;ipsecGatewayDetail&quot;: &quot;{\&quot;enabled\&quot;:false,\&quot;strictHostCheck\&quot;:false,\&quot;strictHostCheckDN\&quot;:null}&quot;,
+          &quot;modified&quot;: &quot;2026-02-20T14:20:54.000Z&quot;,
+          &quot;globalConnectedEdges&quot;: null,
+          &quot;principle&quot;: null,
+          &quot;enterpriseObjectId&quot;: 1109
+        }
+      ]
+    }
+  ]</content>
+  </example>
+  <command name="IMPORT">
+    <operation><![CDATA[POST]]></operation>
+    <parser>
+      <section>
+        <regexp>@^\s \s*$@</regexp>
+        <xpath>$[?(@.type == &apos;dataCenter&apos;)]</xpath>
+      </section>
+      <lines>
+        <line>
+          <regexp>@^(?&lt;object_id&gt;.*)$@</regexp>
+          <xpath>$.id</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;name&gt;.*)$@</regexp>
+          <xpath>$.name</xpath>
+        </line>
+        <line>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;type&gt;.*)$@</regexp>
+          <xpath>$.type</xpath>
+        </line>
+        <line>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;authtype&gt;.*)$@</regexp>
+          <xpath>$.data.authentication.type</xpath>
+        </line>
+        <line>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;authkey&gt;.*)$@</regexp>
+          <xpath>$.data.authentication.key</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;status&gt;.*)$@</regexp>
+          <xpath>$.status</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;primaryIP&gt;.*)$@</regexp>
+          <xpath>$.data.primary.dataCenterPublicIp</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;primarytype&gt;.*)$@</regexp>
+          <xpath>$.data.primary.redundant.type</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;gatewayPublicIp&gt;.*)$@</regexp>
+          <xpath>$.data.primary.gatewayPublicIp</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;secondaryIP&gt;.*)$@</regexp>
+          <xpath>$.data.secondary.dataCenterPublicIp</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;secondarytype&gt;.*)$@</regexp>
+          <xpath>$.data.secondary.redundant.type</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;redundantgatewayPublicIp&gt;.*)$@</regexp>
+          <xpath>$.data.primary.redundant.gatewayPublicIp</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;tunnelMode&gt;.*)$@</regexp>
+          <xpath>$.data.tunnelMode</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;alertsEnabled&gt;.*)$@</regexp>
+          <xpath>$.alertsEnabled</xpath>
+        </line>
+        <line>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;datacenterVersion&gt;.*)$@</regexp>
+          <xpath>$.data.datacenterVersion</xpath>
+        </line>
+      </lines>
+    </parser>
+    <xpath>/portal/rest/enterprise/getEnterpriseServices#{literal}{{/literal}&quot;enterpriseId&quot;: {$enterpriseId}{literal}}{/literal}</xpath>
+  </command>
+  <command name="CREATE">
+    <operation><![CDATA[{literal}{{/literal}
+    "enterpriseId": "{$params.enterpriseId}",
+    "name": "{$params.name}",
+    "data": {literal}{{/literal}
+        "type": "{$params.gatewaytype}",
+        "vpnGateways": [
+            {foreach $params.vpnGateways as $gateway}
+                "{$gateway.gateway}"{if !$gateway@last},{/if}
+            {/foreach}
+        ],
+        "tunnelMode": "{$params.tunnelMode}",
+        "loadSharingMethod": {literal}{{/literal}
+            "algo": "",
+            "hashParams": {literal}{{/literal}
+                "srcIp": {if $params.hash.srcIp}true{else}false{/if},
+                "destIp": {if $params.hash.destIp}true{else}false{/if},
+                "srcPort": {if $params.hash.srcPort}true{else}false{/if},
+                "destPort": {if $params.hash.destPort}true{else}false{/if},
+                "protocol": {if $params.hash.protocol}true{else}false{/if}
+            {literal}}{/literal}
+        {literal}}{/literal}
+    {literal}}{/literal}
+{literal}}{/literal}]]></operation>
+    <rest>POST</rest>
+    <xpath>/portal/rest/vpn/generateVpnGatewayConfiguration</xpath>
+  </command>
+  <command name="READ"/>
+  <command name="UPDATE">
+    <operation><![CDATA[{
+  "id": {$object_id},
+  "enterpriseId": {$enterpriseId},
+  "_update": {
+    "name": "{$params.name}",
+    "type": "{$params.type}",
+    "data": {
+        "isServiceEnabled": true,
+                "subnets": [
+                ]
+    }
+  }
+}]]></operation>
+    <rest>POST</rest>
+    <xpath>/portal/rest/enterprise/updateEnterpriseService</xpath>
+  </command>
+  <command name="CONSTRAINT"/>
+  <command name="DELETE">
+    <operation><![CDATA[{literal}{{/literal}
+    "enterpriseId": {$params.enterpriseId|default:71},
+    "id": {$params.object_id}
+{literal}}{/literal}]]></operation>
+    <rest>POST</rest>
+    <xpath>/portal/rest/enterprise/deleteEnterpriseService</xpath>
+  </command>
+  <command name="LIST"/>
+  <displayName>VeloCloudNonSDWDestViaGateway</displayName>
+  <order>0</order>
+</ObjectDefinition>

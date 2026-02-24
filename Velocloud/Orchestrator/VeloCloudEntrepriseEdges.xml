@@ -1,0 +1,249 @@
+<ObjectDefinition>
+  <information>
+    <icon>none</icon>
+    <description></description>
+    <displayField>object_id</displayField>
+    <order>0</order>
+    <visibility/>
+    <wfConstraintsPath></wfConstraintsPath>
+    <configType>json</configType>
+    <createTemplateId></createTemplateId>
+    <createTemplateObject></createTemplateObject>
+    <defaultDisplay>false</defaultDisplay>
+    <dynamic>false</dynamic>
+    <importIfMandatoryPresent>false</importIfMandatoryPresent>
+    <maxInstances>0</maxInstances>
+    <relatedObjects></relatedObjects>
+    <retainIfImportIsEmpty>false</retainIfImportIsEmpty>
+    <name>VeloCloudEntrepriseEdges</name>
+    <group>Default</group>
+    <importonce>false</importonce>
+    <importrank>0</importrank>
+    <reorderinstances>false</reorderinstances>
+    <sortascending>false</sortascending>
+    <sortauto>false</sortauto>
+    <sortnumerical>false</sortnumerical>
+    <sortvariable>params._order</sortvariable>
+  </information>
+  <variables frozen="0">
+    <variable displayName="object_id" name="params.object_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+  </variables>
+  <example>
+    <content>{
+    &quot;metaData&quot;: {
+        &quot;limit&quot;: 2048,
+        &quot;more&quot;: false
+    },
+    &quot;data&quot;: [
+        {
+            &quot;created&quot;: &quot;2026-02-20T09:47:08.000Z&quot;,
+            &quot;activationKey&quot;: &quot;F2ZK-ECBF-9ZAC-A25E&quot;,
+            &quot;activationKeyExpires&quot;: &quot;2026-03-22T09:47:09.000Z&quot;,
+            &quot;activationState&quot;: &quot;ACTIVATED&quot;,
+            &quot;activationTime&quot;: &quot;2026-02-20T09:48:07.000Z&quot;,
+            &quot;softwareVersion&quot;: &quot;6.1.0.1&quot;,
+            &quot;buildNumber&quot;: &quot;R6101-20250527-GA-162396-4adfe57fae&quot;,
+            &quot;factorySoftwareVersion&quot;: &quot;5.2.4.0&quot;,
+            &quot;factoryBuildNumber&quot;: &quot;R5240-20241016-MR-GA&quot;,
+            &quot;platformFirmwareVersion&quot;: &quot;&quot;,
+            &quot;platformBuildNumber&quot;: &quot;&quot;,
+            &quot;modemFirmwareVersion&quot;: &quot;&quot;,
+            &quot;modemBuildNumber&quot;: &quot;&quot;,
+            &quot;softwareUpdated&quot;: &quot;2026-02-20T09:51:36.000Z&quot;,
+            &quot;selfMacAddress&quot;: &quot;d4:e5:c9:01:70:21&quot;,
+            &quot;deviceId&quot;: &quot;e87306d8-5994-2b47-8687-ed1ebfb0d644&quot;,
+            &quot;logicalId&quot;: &quot;41f590c2-03a9-4f27-8325-c2ec55ba5940&quot;,
+            &quot;serialNumber&quot;: &quot;VC07102509012635&quot;,
+            &quot;modelNumber&quot;: &quot;edge710&quot;,
+            &quot;deviceFamily&quot;: &quot;EDGE7X0&quot;,
+            &quot;lteRegion&quot;: null,
+            &quot;name&quot;: &quot;Los Angeles 710&quot;,
+            &quot;dnsName&quot;: null,
+            &quot;description&quot;: &quot;&quot;,
+            &quot;alertsEnabled&quot;: true,
+            &quot;operatorAlertsEnabled&quot;: true,
+            &quot;edgeState&quot;: &quot;CONNECTED&quot;,
+            &quot;edgeStateTime&quot;: null,
+            &quot;isLive&quot;: false,
+            &quot;systemUpSince&quot;: &quot;2026-02-20T09:50:21.000Z&quot;,
+            &quot;serviceUpSince&quot;: &quot;2026-02-20T10:47:21.000Z&quot;,
+            &quot;lastContact&quot;: &quot;2026-02-20T16:26:46.000Z&quot;,
+            &quot;serviceState&quot;: &quot;IN_SERVICE&quot;,
+            &quot;endpointPkiMode&quot;: &quot;CERTIFICATE_OPTIONAL&quot;,
+            &quot;haState&quot;: &quot;UNCONFIGURED&quot;,
+            &quot;haPreviousState&quot;: &quot;UNCONFIGURED&quot;,
+            &quot;haLastContact&quot;: null,
+            &quot;haSerialNumber&quot;: null,
+            &quot;bastionState&quot;: &quot;UNCONFIGURED&quot;,
+            &quot;modified&quot;: &quot;2026-02-20T16:27:30.000Z&quot;,
+            &quot;customInfo&quot;: &quot;&quot;,
+            &quot;haMode&quot;: null,
+            &quot;standbySystemUpSince&quot;: null,
+            &quot;standbyServiceUpSince&quot;: null,
+            &quot;standbySoftwareVersion&quot;: null,
+            &quot;standbyFactorySoftwareVersion&quot;: null,
+            &quot;standbyFactoryBuildNumber&quot;: null,
+            &quot;standbyBuildNumber&quot;: null,
+            &quot;standbyModelNumber&quot;: null,
+            &quot;standbyDeviceId&quot;: null,
+            &quot;_href&quot;: &quot;/api/sdwan/v2/enterprises/94883fd9-a7f3-419e-8ceb-39d8b5d5c6a7/edges/41f590c2-03a9-4f27-8325-c2ec55ba5940&quot;,
+            &quot;enterprise&quot;: {
+                &quot;_href&quot;: &quot;/api/sdwan/v2/enterprises/94883fd9-a7f3-419e-8ceb-39d8b5d5c6a7&quot;
+            },
+            &quot;site&quot;: {
+                &quot;_href&quot;: &quot;/api/sdwan/v2/enterprises/94883fd9-a7f3-419e-8ceb-39d8b5d5c6a7/sites/1f73ae7a-0e41-11f1-8907-42010a92240d&quot;
+            },
+            &quot;links&quot;: [
+            ]
+        },
+        {
+            &quot;created&quot;: &quot;2026-02-20T15:31:42.000Z&quot;,
+            &quot;activationKey&quot;: &quot;TENS-ZA9S-CDAC-TMAL&quot;,
+            &quot;activationKeyExpires&quot;: &quot;2026-03-22T15:31:43.000Z&quot;,
+            &quot;activationState&quot;: &quot;PENDING&quot;,
+            &quot;activationTime&quot;: &quot;2026-02-20T15:31:43.000Z&quot;,
+            &quot;softwareVersion&quot;: &quot;&quot;,
+            &quot;buildNumber&quot;: &quot;&quot;,
+            &quot;factorySoftwareVersion&quot;: &quot;&quot;,
+            &quot;factoryBuildNumber&quot;: &quot;&quot;,
+            &quot;platformFirmwareVersion&quot;: &quot;&quot;,
+            &quot;platformBuildNumber&quot;: &quot;&quot;,
+            &quot;modemFirmwareVersion&quot;: &quot;&quot;,
+            &quot;modemBuildNumber&quot;: &quot;&quot;,
+            &quot;softwareUpdated&quot;: null,
+            &quot;selfMacAddress&quot;: &quot;00:00:00:00:00:00&quot;,
+            &quot;deviceId&quot;: null,
+            &quot;logicalId&quot;: &quot;a46bcd27-c830-43a1-a81e-58b88c41dfd1&quot;,
+            &quot;serialNumber&quot;: &quot;VC000000123&quot;,
+            &quot;modelNumber&quot;: &quot;edge510&quot;,
+            &quot;deviceFamily&quot;: &quot;EDGE5X0&quot;,
+            &quot;lteRegion&quot;: null,
+            &quot;name&quot;: &quot;New York 510&quot;,
+            &quot;dnsName&quot;: null,
+            &quot;description&quot;: &quot;&quot;,
+            &quot;alertsEnabled&quot;: true,
+            &quot;operatorAlertsEnabled&quot;: true,
+            &quot;edgeState&quot;: &quot;NEVER_ACTIVATED&quot;,
+            &quot;edgeStateTime&quot;: null,
+            &quot;isLive&quot;: false,
+            &quot;systemUpSince&quot;: &quot;2026-02-20T15:31:43.000Z&quot;,
+            &quot;serviceUpSince&quot;: null,
+            &quot;lastContact&quot;: null,
+            &quot;serviceState&quot;: &quot;IN_SERVICE&quot;,
+            &quot;endpointPkiMode&quot;: &quot;CERTIFICATE_OPTIONAL&quot;,
+            &quot;haState&quot;: &quot;UNCONFIGURED&quot;,
+            &quot;haPreviousState&quot;: &quot;UNCONFIGURED&quot;,
+            &quot;haLastContact&quot;: null,
+            &quot;haSerialNumber&quot;: null,
+            &quot;bastionState&quot;: &quot;UNCONFIGURED&quot;,
+            &quot;modified&quot;: &quot;2026-02-20T15:33:05.000Z&quot;,
+            &quot;customInfo&quot;: &quot;&quot;,
+            &quot;haMode&quot;: null,
+            &quot;standbySystemUpSince&quot;: null,
+            &quot;standbyServiceUpSince&quot;: null,
+            &quot;standbySoftwareVersion&quot;: null,
+            &quot;standbyFactorySoftwareVersion&quot;: null,
+            &quot;standbyFactoryBuildNumber&quot;: null,
+            &quot;standbyBuildNumber&quot;: null,
+            &quot;standbyModelNumber&quot;: null,
+            &quot;standbyDeviceId&quot;: null,
+            &quot;_href&quot;: &quot;/api/sdwan/v2/enterprises/94883fd9-a7f3-419e-8ceb-39d8b5d5c6a7/edges/a46bcd27-c830-43a1-a81e-58b88c41dfd1&quot;,
+            &quot;enterprise&quot;: {
+                &quot;_href&quot;: &quot;/api/sdwan/v2/enterprises/94883fd9-a7f3-419e-8ceb-39d8b5d5c6a7&quot;
+            },
+            &quot;site&quot;: {
+                &quot;_href&quot;: &quot;/api/sdwan/v2/enterprises/94883fd9-a7f3-419e-8ceb-39d8b5d5c6a7/sites/421a68d8-0e71-11f1-8907-42010a92240d&quot;
+            },
+            &quot;links&quot;: [
+            ]
+        },
+        {
+            &quot;created&quot;: &quot;2026-02-20T15:54:10.000Z&quot;,
+            &quot;activationKey&quot;: &quot;BV2J-W2DM-9QMZ-SJQV&quot;,
+            &quot;activationKeyExpires&quot;: &quot;2026-03-22T15:54:10.000Z&quot;,
+            &quot;activationState&quot;: &quot;PENDING&quot;,
+            &quot;activationTime&quot;: &quot;2026-02-20T15:54:10.000Z&quot;,
+            &quot;softwareVersion&quot;: &quot;&quot;,
+            &quot;buildNumber&quot;: &quot;&quot;,
+            &quot;factorySoftwareVersion&quot;: &quot;&quot;,
+            &quot;factoryBuildNumber&quot;: &quot;&quot;,
+            &quot;platformFirmwareVersion&quot;: &quot;&quot;,
+            &quot;platformBuildNumber&quot;: &quot;&quot;,
+            &quot;modemFirmwareVersion&quot;: &quot;&quot;,
+            &quot;modemBuildNumber&quot;: &quot;&quot;,
+            &quot;softwareUpdated&quot;: null,
+            &quot;selfMacAddress&quot;: &quot;00:00:00:00:00:00&quot;,
+            &quot;deviceId&quot;: null,
+            &quot;logicalId&quot;: &quot;9d947094-1c08-485e-a7ea-9f3a884e17f6&quot;,
+            &quot;serialNumber&quot;: null,
+            &quot;modelNumber&quot;: &quot;edge510&quot;,
+            &quot;deviceFamily&quot;: &quot;EDGE5X0&quot;,
+            &quot;lteRegion&quot;: null,
+            &quot;name&quot;: &quot;Washington 510&quot;,
+            &quot;dnsName&quot;: null,
+            &quot;description&quot;: &quot;&quot;,
+            &quot;alertsEnabled&quot;: true,
+            &quot;operatorAlertsEnabled&quot;: true,
+            &quot;edgeState&quot;: &quot;NEVER_ACTIVATED&quot;,
+            &quot;edgeStateTime&quot;: null,
+            &quot;isLive&quot;: false,
+            &quot;systemUpSince&quot;: &quot;2026-02-20T15:54:10.000Z&quot;,
+            &quot;serviceUpSince&quot;: null,
+            &quot;lastContact&quot;: null,
+            &quot;serviceState&quot;: &quot;IN_SERVICE&quot;,
+            &quot;endpointPkiMode&quot;: &quot;CERTIFICATE_OPTIONAL&quot;,
+            &quot;haState&quot;: &quot;UNCONFIGURED&quot;,
+            &quot;haPreviousState&quot;: &quot;UNCONFIGURED&quot;,
+            &quot;haLastContact&quot;: null,
+            &quot;haSerialNumber&quot;: null,
+            &quot;bastionState&quot;: &quot;UNCONFIGURED&quot;,
+            &quot;modified&quot;: &quot;2026-02-20T15:56:03.000Z&quot;,
+            &quot;customInfo&quot;: &quot;&quot;,
+            &quot;haMode&quot;: null,
+            &quot;standbySystemUpSince&quot;: null,
+            &quot;standbyServiceUpSince&quot;: null,
+            &quot;standbySoftwareVersion&quot;: null,
+            &quot;standbyFactorySoftwareVersion&quot;: null,
+            &quot;standbyFactoryBuildNumber&quot;: null,
+            &quot;standbyBuildNumber&quot;: null,
+            &quot;standbyModelNumber&quot;: null,
+            &quot;standbyDeviceId&quot;: null,
+            &quot;_href&quot;: &quot;/api/sdwan/v2/enterprises/94883fd9-a7f3-419e-8ceb-39d8b5d5c6a7/edges/9d947094-1c08-485e-a7ea-9f3a884e17f6&quot;,
+            &quot;enterprise&quot;: {
+                &quot;_href&quot;: &quot;/api/sdwan/v2/enterprises/94883fd9-a7f3-419e-8ceb-39d8b5d5c6a7&quot;
+            },
+            &quot;site&quot;: {
+                &quot;_href&quot;: &quot;/api/sdwan/v2/enterprises/94883fd9-a7f3-419e-8ceb-39d8b5d5c6a7/sites/65582444-0e74-11f1-8907-42010a92240d&quot;
+            },
+            &quot;links&quot;: [
+            ]
+        }
+    ],
+    &quot;_href&quot;: &quot;/api/sdwan/v2/enterprises/94883fd9-a7f3-419e-8ceb-39d8b5d5c6a7/edges&quot;
+}</content>
+  </example>
+  <command name="IMPORT">
+    <operation><![CDATA[GET]]></operation>
+    <parser>
+      <section>
+        <regexp>@^\s \s*$@</regexp>
+        <xpath>$.data.*</xpath>
+      </section>
+      <lines>
+        <line>
+          <regexp>@^(?&lt;object_id&gt;.*)$@</regexp>
+          <xpath>$.name</xpath>
+        </line>
+      </lines>
+    </parser>
+    <xpath>/api/sdwan/v2/enterprises/{$enterpriseLogicalId}/edges/</xpath>
+  </command>
+  <command name="CREATE"/>
+  <command name="READ"/>
+  <command name="UPDATE"/>
+  <command name="CONSTRAINT"/>
+  <command name="DELETE"/>
+  <command name="LIST"/>
+  <displayName>VeloCloudEntrepriseEdges</displayName>
+  <order>0</order>
+</ObjectDefinition>
