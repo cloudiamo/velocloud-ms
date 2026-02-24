@@ -1,0 +1,30 @@
+name: 🚀 Deploy
+permissions:
+  actions: read
+  attestations: write
+  packages: write
+  id-token: write
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+  push:
+    branches:
+      - master
+      - next_release/*
+      - release/*
+
+jobs:
+  build-and-publish:
+    uses: cloudiamo/cloudiamo-gha/.github/workflows/normal-build.yaml@master
+    secrets:
+      DOCKER_HUB_USERNAME: ${{ secrets.DOCKER_HUB_USERNAME }}
+      DOCKER_HUB_TOKEN: ${{ secrets.DOCKER_HUB_TOKEN }}
+      REPO_ACCESS_TOKEN: ${{ secrets.MSA_DOCKER_REPO_ACCESS_TOKEN  }}
+    with:
+      container-name: ubiqube/cld-velocloud-ms-installer
