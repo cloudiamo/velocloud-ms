@@ -1,0 +1,213 @@
+<ObjectDefinition>
+  <information>
+    <icon>none</icon>
+    <description></description>
+    <displayField>object_id</displayField>
+    <order>0</order>
+    <visibility/>
+    <wfConstraintsPath></wfConstraintsPath>
+    <configType>json</configType>
+    <createTemplateId></createTemplateId>
+    <createTemplateObject></createTemplateObject>
+    <defaultDisplay>false</defaultDisplay>
+    <dynamic>false</dynamic>
+    <importIfMandatoryPresent>false</importIfMandatoryPresent>
+    <maxInstances>0</maxInstances>
+    <relatedObjects></relatedObjects>
+    <retainIfImportIsEmpty>false</retainIfImportIsEmpty>
+    <name>veloCloudEgde v2</name>
+    <group>Default</group>
+    <importonce>false</importonce>
+    <importrank>0</importrank>
+    <reorderinstances>false</reorderinstances>
+    <sortascending>false</sortascending>
+    <sortauto>false</sortauto>
+    <sortnumerical>false</sortnumerical>
+    <sortvariable>params._order</sortvariable>
+  </information>
+  <variables frozen="0">
+    <variable displayName="object_id" name="params.object_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="activationState" name="params.activationState" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+  </variables>
+  <example>
+    <content>{
+  &quot;_href&quot;: &quot;&quot;,
+  &quot;data&quot;: [
+    {
+      &quot;_href&quot;: &quot;&quot;,
+      &quot;activationKey&quot;: &quot;&quot;,
+      &quot;activationKeyExpires&quot;: &quot;Fri Jan 23 2026 02:34:02 GMT+0000 (Coordinated Universal Time)&quot;,
+      &quot;activationState&quot;: &quot;UNASSIGNED&quot;,
+      &quot;activationTime&quot;: &quot;Thu Jan 22 2026 22:05:52 GMT+0000 (Coordinated Universal Time)&quot;,
+      &quot;alertsEnabled&quot;: false,
+      &quot;bastionState&quot;: &quot;UNCONFIGURED&quot;,
+      &quot;buildNumber&quot;: &quot;&quot;,
+      &quot;created&quot;: &quot;Thu Jan 22 2026 13:11:51 GMT+0000 (Coordinated Universal Time)&quot;,
+      &quot;customInfo&quot;: &quot;&quot;,
+      &quot;description&quot;: &quot;&quot;,
+      &quot;deviceFamily&quot;: &quot;&quot;,
+      &quot;deviceId&quot;: &quot;&quot;,
+      &quot;dnsName&quot;: &quot;&quot;,
+      &quot;edgeState&quot;: &quot;EXPIRED&quot;,
+      &quot;edgeStateTime&quot;: &quot;Thu Jan 22 2026 18:30:51 GMT+0000 (Coordinated Universal Time)&quot;,
+      &quot;endpointPkiMode&quot;: &quot;CERTIFICATE_REQUIRED&quot;,
+      &quot;factoryBuildNumber&quot;: &quot;&quot;,
+      &quot;factorySoftwareVersion&quot;: &quot;&quot;,
+      &quot;platformBuildNumber&quot;: &quot;&quot;,
+      &quot;platformFirmwareVersion&quot;: &quot;&quot;,
+      &quot;modemBuildNumber&quot;: &quot;&quot;,
+      &quot;modemFirmwareVersion&quot;: &quot;&quot;,
+      &quot;lteRegion&quot;: &quot;&quot;,
+      &quot;haLastContact&quot;: &quot;Thu Jan 22 2026 23:49:21 GMT+0000 (Coordinated Universal Time)&quot;,
+      &quot;haPreviousState&quot;: &quot;UNCONFIGURED&quot;,
+      &quot;haSerialNumber&quot;: &quot;&quot;,
+      &quot;haState&quot;: &quot;PENDING_INIT&quot;,
+      &quot;isLive&quot;: true,
+      &quot;lastContact&quot;: &quot;Thu Jan 22 2026 18:18:56 GMT+0000 (Coordinated Universal Time)&quot;,
+      &quot;logicalId&quot;: &quot;&quot;,
+      &quot;modelNumber&quot;: &quot;&quot;,
+      &quot;modified&quot;: &quot;Fri Jan 23 2026 01:52:21 GMT+0000 (Coordinated Universal Time)&quot;,
+      &quot;name&quot;: &quot;&quot;,
+      &quot;operatorAlertsEnabled&quot;: true,
+      &quot;selfMacAddress&quot;: &quot;&quot;,
+      &quot;serialNumber&quot;: &quot;&quot;,
+      &quot;serviceState&quot;: &quot;PENDING_SERVICE&quot;,
+      &quot;serviceUpSince&quot;: &quot;Thu Jan 22 2026 15:12:28 GMT+0000 (Coordinated Universal Time)&quot;,
+      &quot;softwareUpdated&quot;: &quot;Fri Jan 23 2026 08:22:52 GMT+0000 (Coordinated Universal Time)&quot;,
+      &quot;softwareVersion&quot;: &quot;&quot;,
+      &quot;systemUpSince&quot;: &quot;Thu Jan 22 2026 23:19:36 GMT+0000 (Coordinated Universal Time)&quot;,
+      &quot;links&quot;: [
+        {
+          &quot;_href&quot;: &quot;&quot;,
+          &quot;created&quot;: &quot;Fri Jan 23 2026 08:44:46 GMT+0000 (Coordinated Universal Time)&quot;,
+          &quot;logicalId&quot;: &quot;&quot;,
+          &quot;internalId&quot;: &quot;&quot;,
+          &quot;interface&quot;: &quot;&quot;,
+          &quot;macAddress&quot;: &quot;&quot;,
+          &quot;ipAddress&quot;: &quot;&quot;,
+          &quot;ipV6Address&quot;: &quot;&quot;,
+          &quot;netmask&quot;: &quot;&quot;,
+          &quot;networkSide&quot;: &quot;UNKOWN&quot;,
+          &quot;networkType&quot;: &quot;UNKNOWN&quot;,
+          &quot;displayName&quot;: &quot;&quot;,
+          &quot;userOverride&quot;: false,
+          &quot;isp&quot;: &quot;&quot;,
+          &quot;org&quot;: &quot;&quot;,
+          &quot;lat&quot;: 0.8346482764958753,
+          &quot;lon&quot;: 0.09846695859662691,
+          &quot;lastActive&quot;: &quot;Fri Jan 23 2026 04:27:23 GMT+0000 (Coordinated Universal Time)&quot;,
+          &quot;state&quot;: &quot;STANDBY&quot;,
+          &quot;backupState&quot;: &quot;ACTIVE&quot;,
+          &quot;linkMode&quot;: &quot;HOTSTANDBY&quot;,
+          &quot;lastEvent&quot;: &quot;Fri Jan 23 2026 00:59:39 GMT+0000 (Coordinated Universal Time)&quot;,
+          &quot;lastEventState&quot;: &quot;UNKNOWN&quot;,
+          &quot;alertsEnabled&quot;: true,
+          &quot;operatorAlertsEnabled&quot;: true,
+          &quot;serviceState&quot;: &quot;IN_SERVICE&quot;,
+          &quot;modified&quot;: &quot;Thu Jan 22 2026 22:49:05 GMT+0000 (Coordinated Universal Time)&quot;
+        }
+      ],
+      &quot;site&quot;: {
+        &quot;_href&quot;: &quot;&quot;,
+        &quot;created&quot;: &quot;Fri Jan 23 2026 03:00:16 GMT+0000 (Coordinated Universal Time)&quot;,
+        &quot;name&quot;: &quot;&quot;,
+        &quot;contactName&quot;: &quot;&quot;,
+        &quot;contactPhone&quot;: &quot;&quot;,
+        &quot;contactMobile&quot;: &quot;&quot;,
+        &quot;contactEmail&quot;: &quot;Agustin_Cartwright@yahoo.com&quot;,
+        &quot;streetAddress&quot;: &quot;&quot;,
+        &quot;streetAddress2&quot;: &quot;&quot;,
+        &quot;city&quot;: &quot;&quot;,
+        &quot;state&quot;: &quot;&quot;,
+        &quot;country&quot;: &quot;&quot;,
+        &quot;postalCode&quot;: &quot;&quot;,
+        &quot;lat&quot;: 0.7400267106932296,
+        &quot;lon&quot;: 0.6041833556927514,
+        &quot;timezone&quot;: &quot;&quot;,
+        &quot;locale&quot;: &quot;&quot;,
+        &quot;shippingSameAsLocation&quot;: true,
+        &quot;shippingContactName&quot;: &quot;&quot;,
+        &quot;shippingAddress&quot;: &quot;&quot;,
+        &quot;shippingAddress2&quot;: &quot;&quot;,
+        &quot;shippingCity&quot;: &quot;&quot;,
+        &quot;shippingState&quot;: &quot;&quot;,
+        &quot;shippingCountry&quot;: &quot;&quot;,
+        &quot;shippingPostalCode&quot;: &quot;&quot;,
+        &quot;modified&quot;: &quot;Fri Jan 23 2026 04:56:53 GMT+0000 (Coordinated Universal Time)&quot;
+      },
+      &quot;enterprise&quot;: {
+        &quot;_href&quot;: &quot;&quot;,
+        &quot;created&quot;: &quot;Thu Jan 22 2026 13:34:45 GMT+0000 (Coordinated Universal Time)&quot;,
+        &quot;alertsEnabled&quot;: true,
+        &quot;operatorAlertsEnabled&quot;: true,
+        &quot;endpointPkiMode&quot;: &quot;CERTIFICATE_DISABLED&quot;,
+        &quot;name&quot;: &quot;&quot;,
+        &quot;domain&quot;: &quot;&quot;,
+        &quot;prefix&quot;: &quot;&quot;,
+        &quot;logicalId&quot;: &quot;&quot;,
+        &quot;accountNumber&quot;: &quot;&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;contactName&quot;: &quot;&quot;,
+        &quot;contactPhone&quot;: &quot;&quot;,
+        &quot;contactMobile&quot;: &quot;&quot;,
+        &quot;contactEmail&quot;: &quot;&quot;,
+        &quot;streetAddress&quot;: &quot;&quot;,
+        &quot;streetAddress2&quot;: &quot;&quot;,
+        &quot;city&quot;: &quot;&quot;,
+        &quot;state&quot;: &quot;&quot;,
+        &quot;postalCode&quot;: &quot;&quot;,
+        &quot;country&quot;: &quot;&quot;,
+        &quot;lat&quot;: 0.0037294041707963688,
+        &quot;lon&quot;: 0.8325144720962525,
+        &quot;timezone&quot;: &quot;&quot;,
+        &quot;locale&quot;: &quot;&quot;,
+        &quot;modified&quot;: &quot;Thu Jan 22 2026 20:17:05 GMT+0000 (Coordinated Universal Time)&quot;,
+        &quot;gatewayPool&quot;: {
+          &quot;_href&quot;: &quot;&quot;
+        },
+        &quot;bastionState&quot;: &quot;UNCONFIGURED&quot;
+      },
+      &quot;haMode&quot;: &quot;&quot;,
+      &quot;standbySystemUpSince&quot;: &quot;Fri Jan 23 2026 09:20:46 GMT+0000 (Coordinated Universal Time)&quot;,
+      &quot;standbyServiceUpSince&quot;: &quot;Thu Jan 22 2026 10:34:54 GMT+0000 (Coordinated Universal Time)&quot;,
+      &quot;standbySoftwareVersion&quot;: &quot;&quot;,
+      &quot;standbyFactorySoftwareVersion&quot;: &quot;&quot;,
+      &quot;standbyFactoryBuildNumber&quot;: &quot;&quot;,
+      &quot;standbyBuildNumber&quot;: &quot;&quot;,
+      &quot;standbyModelNumber&quot;: &quot;&quot;,
+      &quot;standbyDeviceId&quot;: &quot;&quot;
+    }
+  ],
+  &quot;metaData&quot;: {
+    &quot;prevPageLink&quot;: &quot;&quot;,
+    &quot;nextPageLink&quot;: &quot;&quot;,
+    &quot;limit&quot;: 17293,
+    &quot;more&quot;: false
+  }
+}</content>
+  </example>
+  <command name="IMPORT">
+    <operation><![CDATA[GET]]></operation>
+    <parser>
+      <section>
+        <regexp>@^\s \s*$@</regexp>
+        <xpath>$.data.*</xpath>
+      </section>
+      <lines>
+        <line>
+          <regexp>@(?&lt;activationState&gt;.*)@</regexp>
+          <xpath>$.activationState</xpath>
+        </line>
+      </lines>
+    </parser>
+    <xpath>/api/sdwan/v2/enterprises/{$enterpriseLogicalId}/edges/</xpath>
+  </command>
+  <command name="CREATE"/>
+  <command name="READ"/>
+  <command name="UPDATE"/>
+  <command name="CONSTRAINT"/>
+  <command name="DELETE"/>
+  <command name="LIST"/>
+  <displayName>veloCloudEgde v2</displayName>
+  <order>0</order>
+</ObjectDefinition>
