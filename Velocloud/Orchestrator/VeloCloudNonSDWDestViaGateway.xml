@@ -15,7 +15,7 @@
     <maxInstances>0</maxInstances>
     <relatedObjects></relatedObjects>
     <retainIfImportIsEmpty>false</retainIfImportIsEmpty>
-    <name>VeloCloudNonSDWDestViaGateway</name>
+    <name>Non SD-WAN Destinations Via Gateway</name>
     <group>Default</group>
     <importonce>false</importonce>
     <importrank>0</importrank>
@@ -26,9 +26,11 @@
     <sortvariable>params._order</sortvariable>
   </information>
   <variables frozen="0">
-    <variable displayName="id" name="params.object_id" startIncrement="0" type="AutoIncrement" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="1" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="id" name="params.object_id" startIncrement="0" type="AutoIncrement" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="1" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
     <variable displayName="Name" name="params.name" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
-    <variable displayName="Type" name="params.type" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="dataCenter" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+    <variable displayName="Disable VMware Cloud VPN" name="params.disabled" startIncrement="0" type="Boolean" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Logical ID" name="params.logicalId" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Type" name="params.type" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="dataCenter" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
       <values/>
     </variable>
     <variable displayName="Tunnel Mode" name="params.tunnelMode" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="ACTIVE_HOT_STANDBY" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
@@ -38,17 +40,107 @@
       </values>
     </variable>
     <variable displayName="Status" name="params.status" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
-    <variable displayName="Auth Type" name="params.authtype" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="|" groupDisplayName="" maxLength="100" displayOrder="4" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+    <variable displayName="Auth Type" name="params.authtype" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="|" groupDisplayName="" maxLength="100" displayOrder="4" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="&quot;&quot;" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Authentication</sections>
+      </sections>
       <values>
         <values displayValue="FQDN">FQDN</values>
-        <values displayValue="Default">&quot;&quot;</values>
+        <values displayValue="Default">Default</values>
         <values displayValue="User FQDN">USER_FQDN</values>
         <values displayValue="IPv4">IPv4</values>
         <values displayValue="IPv6">IPv6</values>
       </values>
     </variable>
-    <variable displayName="Auth Key" name="params.authkey" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
-    <variable displayName="gateway" name="params.vpnGateways.0.gateway" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+    <variable displayName="Auth Key" name="params.authkey" startIncrement="0" type="Composite" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" selector="params.authtype" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <behaviors>
+        <behaviour arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" editable="false" visible="true" displayName="Auth Key" displayOrder="0" maxLength="100" isMandatory="true" isUserLocked="false" name="params.authkey" selectorValue="FQDN" startIncrement="0" type="String" default="some.domain.com" localVarToFilter="" remoteVarToFilter="" uniqueItemsInDropDownList="false">
+          <compositeKey>false</compositeKey>
+          <codeLanguage></codeLanguage>
+          <defaultValueLong/>
+          <description></description>
+          <displayNameHeader></displayNameHeader>
+          <fullDisplayName></fullDisplayName>
+          <groupDisplayName></groupDisplayName>
+          <groupSeparator></groupSeparator>
+          <isGrouped>false</isGrouped>
+          <increment>0</increment>
+          <isCompositeKey>false</isCompositeKey>
+          <keepOnImport>false</keepOnImport>
+          <mandatoryArray>false</mandatoryArray>
+          <onlyDetailView>false</onlyDetailView>
+          <refDeviceIdVar></refDeviceIdVar>
+          <refServiceURI></refServiceURI>
+          <isSearchable>false</isSearchable>
+          <selector>params.authtype</selector>
+          <isUniqueGlobal>false</isUniqueGlobal>
+        </behaviour>
+        <behaviour arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" editable="false" visible="true" displayName="Auth Key" displayOrder="0" maxLength="100" isMandatory="true" isUserLocked="false" name="params.authkey" selectorValue="USER_FQDN" startIncrement="0" type="String" default="user@some.domain.com" localVarToFilter="" remoteVarToFilter="" uniqueItemsInDropDownList="false">
+          <compositeKey>false</compositeKey>
+          <codeLanguage></codeLanguage>
+          <defaultValueLong/>
+          <description></description>
+          <displayNameHeader></displayNameHeader>
+          <fullDisplayName></fullDisplayName>
+          <groupDisplayName></groupDisplayName>
+          <groupSeparator></groupSeparator>
+          <isGrouped>false</isGrouped>
+          <increment>0</increment>
+          <isCompositeKey>false</isCompositeKey>
+          <keepOnImport>false</keepOnImport>
+          <mandatoryArray>false</mandatoryArray>
+          <onlyDetailView>false</onlyDetailView>
+          <refDeviceIdVar></refDeviceIdVar>
+          <refServiceURI></refServiceURI>
+          <isSearchable>false</isSearchable>
+          <selector>params.authtype</selector>
+          <isUniqueGlobal>false</isUniqueGlobal>
+        </behaviour>
+        <behaviour arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" editable="false" visible="true" displayName="Auth Key" displayOrder="0" maxLength="100" isMandatory="true" isUserLocked="false" name="params.authkey" selectorValue="IPv4" startIncrement="0" type="String" default=" 10.0.2.5" localVarToFilter="" remoteVarToFilter="" uniqueItemsInDropDownList="false">
+          <compositeKey>false</compositeKey>
+          <codeLanguage></codeLanguage>
+          <defaultValueLong/>
+          <description></description>
+          <displayNameHeader></displayNameHeader>
+          <fullDisplayName></fullDisplayName>
+          <groupDisplayName></groupDisplayName>
+          <groupSeparator></groupSeparator>
+          <isGrouped>false</isGrouped>
+          <increment>0</increment>
+          <isCompositeKey>false</isCompositeKey>
+          <keepOnImport>false</keepOnImport>
+          <mandatoryArray>false</mandatoryArray>
+          <onlyDetailView>false</onlyDetailView>
+          <refDeviceIdVar></refDeviceIdVar>
+          <refServiceURI></refServiceURI>
+          <isSearchable>false</isSearchable>
+          <selector></selector>
+          <isUniqueGlobal>false</isUniqueGlobal>
+        </behaviour>
+        <behaviour arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" editable="false" visible="true" displayName="Auth Key" displayOrder="0" maxLength="100" isMandatory="true" isUserLocked="false" name="params.authkey" selectorValue="IPv6" startIncrement="0" type="String" default="2001:db8:3333:4444:5555:6666:7777:8888" localVarToFilter="" remoteVarToFilter="" uniqueItemsInDropDownList="false">
+          <compositeKey>false</compositeKey>
+          <codeLanguage></codeLanguage>
+          <defaultValueLong/>
+          <description></description>
+          <displayNameHeader></displayNameHeader>
+          <fullDisplayName></fullDisplayName>
+          <groupDisplayName></groupDisplayName>
+          <groupSeparator></groupSeparator>
+          <isGrouped>false</isGrouped>
+          <increment>0</increment>
+          <isCompositeKey>false</isCompositeKey>
+          <keepOnImport>false</keepOnImport>
+          <mandatoryArray>false</mandatoryArray>
+          <onlyDetailView>false</onlyDetailView>
+          <refDeviceIdVar></refDeviceIdVar>
+          <refServiceURI></refServiceURI>
+          <isSearchable>false</isSearchable>
+          <selector>params.authtype</selector>
+          <isUniqueGlobal>false</isUniqueGlobal>
+        </behaviour>
+      </behaviors>
+    </variable>
+    <variable displayName="gateway" name="params.vpnGateways.0.gateway" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
       <sections>
         <sections>Gateway</sections>
       </sections>
@@ -71,22 +163,22 @@
         <values displayValue="11: Generic Policy">Generic Policy</values>
       </values>
     </variable>
-    <variable displayName="Primary IP" name="params.primaryIP" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+    <variable displayName="Primary IP" name="params.primaryIP" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
       <sections>
         <sections>Primary</sections>
       </sections>
     </variable>
-    <variable displayName="Primary Type" name="params.primarytype" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+    <variable displayName="Primary Type" name="params.primarytype" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
       <sections>
         <sections>Primary</sections>
       </sections>
     </variable>
-    <variable displayName="Secondary IP" name="params.secondaryIP" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+    <variable displayName="Secondary IP" name="params.secondaryIP" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
       <sections>
         <sections>Secondary</sections>
       </sections>
     </variable>
-    <variable displayName="Secondary Type" name="params.secondarytype" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+    <variable displayName="Secondary Type" name="params.secondarytype" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
       <sections>
         <sections>Secondary</sections>
       </sections>
@@ -96,9 +188,57 @@
     </variable>
     <variable displayName="Redundant Gateway Public IP" name="params.redundantgatewayPublicIp" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
     <variable displayName="Alerts Enabled" name="params.alertsEnabled" startIncrement="0" type="Boolean" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
-    <variable displayName="Profile Count" name="params.profileCount" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="true" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="1" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
     <variable displayName="algo" name="params.algo" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="|" groupDisplayName="" maxLength="100" displayOrder="17" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="hashParams" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
     <variable displayName="datacenterVersion" name="params.datacenterVersion" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Enable Tunnel(s)" name="params.data.isServiceEnabled" startIncrement="0" type="Boolean" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="sharedKey" name="params.sharedKey" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="|" groupDisplayName="" maxLength="100" displayOrder="22" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="18ef113a265d9f3a30f4c044637727053149762d" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>IKE</sections>
+      </sections>
+    </variable>
+    <variable displayName="authenticationAlgorithm" name="params.authenticationAlgorithm" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="|" groupDisplayName="" maxLength="100" displayOrder="23" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="SHA_1" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>IPSEC</sections>
+      </sections>
+      <values>
+        <values displayValue="SHA_1">SHA_1</values>
+        <values displayValue="SHA_256">SHA_256</values>
+      </values>
+    </variable>
+    <variable displayName="encryptionAlgorithm" name="params.encryptionAlgorithm" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="|" groupDisplayName="" maxLength="100" displayOrder="24" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="AES-128-CBC" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>IPSEC</sections>
+      </sections>
+      <values>
+        <values displayValue="AES-128-CBC">AES-128-CBC</values>
+        <values displayValue="AES-256-CBC">AES-256-CBC</values>
+      </values>
+    </variable>
+    <variable displayName="perfectForwardSecurity" name="params.perfectForwardSecurity" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="|" groupDisplayName="" maxLength="100" displayOrder="25" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>IPSEC</sections>
+      </sections>
+      <values>
+        <values displayValue="2">2</values>
+        <values displayValue="5">5</values>
+        <values displayValue="14">14</values>
+        <values displayValue="15">15</values>
+        <values displayValue="16">16</values>
+      </values>
+    </variable>
+    <variable displayName="DHGroup" name="params.DHGroup" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="14" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="previousDHGroup" name="params.previousDHGroup" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="encrypted_ike_key" name="params.encrypted_ike_key" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="|" groupDisplayName="" maxLength="100" displayOrder="29" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="primary Geo Data Latitude" name="params.primaryGeoDataLatitude" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="primary Geo Data Longitude" name="params.primaryGeoDataLongitude" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="secondary Geo Data Latitude" name="params.secondaryGeoDataLatitude" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="secondary Geo Data Longitude" name="params.secondaryGeoDataLongitude" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="primaryGatewayPublicIp" name="params.primaryGatewayPublicIp" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="secondaryGatewayPublicIp" name="params.secondaryGatewayPublicIp" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="primaryDataCenterLinkIp" name="params.primaryDataCenterLinkIp" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="secondaryDataCenterLinkIp" name="params.secondaryDataCenterLinkIp" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="primaryGatewayLinkIp" name="params.primaryGatewayLinkIp" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="secondaryGatewayLinkIp" name="params.secondaryGatewayLinkIp" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
   </variables>
   <example>
     <content>[
@@ -1460,52 +1600,430 @@
           <regexp>@^(?&lt;datacenterVersion&gt;.*)$@</regexp>
           <xpath>$.data.datacenterVersion</xpath>
         </line>
+        <line>
+          <regexp>@^(?&lt;isServiceEnabled&gt;.*)$@</regexp>
+          <xpath>$.data.isServiceEnabled</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;logicalId&gt;.*)$@</regexp>
+          <xpath>$.logicalId</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;DHGroup&gt;.*)$@</regexp>
+          <xpath>$.data.primary.redundant.IKESA.DHGroup</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;previousDHGroup&gt;.*)$@</regexp>
+          <xpath>$.previousData.primary.redundant.IKESA.DHGroup</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;disabled&gt;.*)$@</regexp>
+          <xpath>$.data.primary.redundant.disabled</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;datacenterVersion&gt;.*)$@</regexp>
+          <xpath>$.data.datacenterVersion</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;primaryGeoDataLatitude&gt;.*)$@</regexp>
+          <xpath>$.data.primary.geoData.latitude</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;primaryGeoDataLongitude&gt;.*)$@</regexp>
+          <xpath>$.data.primary.geoData.longitude</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;secondaryGeoDataLatitude&gt;.*)$@</regexp>
+          <xpath>$.data.secondary.geoData.latitude</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;secondaryGeoDataLongitude&gt;.*)$@</regexp>
+          <xpath>$.data.secondary.geoData.longitude</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;primaryGatewayPublicIp&gt;.*)$@</regexp>
+          <xpath>$.data.primary.gatewayPublicIp</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;secondaryGatewayPublicIp&gt;.*)$@</regexp>
+          <xpath>$.data.secondary.gatewayPublicIp</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;primaryDataCenterLinkIp&gt;.*)$@</regexp>
+          <xpath>$.data.primary.dataCenterLinkIp</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;secondaryDataCenterLinkIp&gt;.*)$@</regexp>
+          <xpath>$.data.secondary.dataCenterLinkIp</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;primaryGatewayLinkIp&gt;.*)$@</regexp>
+          <xpath>$.data.primary.gatewayLinkIp</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;secondaryGatewayLinkIp&gt;.*)$@</regexp>
+          <xpath>$.data.secondary.gatewayLinkIp</xpath>
+        </line>
       </lines>
     </parser>
     <xpath>/portal/rest/enterprise/getEnterpriseServices#{literal}{{/literal}&quot;enterpriseId&quot;: {$enterpriseId}{literal}}{/literal}</xpath>
   </command>
   <command name="CREATE">
     <operation><![CDATA[{literal}{{/literal}
-    "enterpriseId": "{$params.enterpriseId}",
-    "name": "{$params.name}",
-    "data": {literal}{{/literal}
-        "type": "{$params.gatewaytype}",
-        "vpnGateways": [
-            {foreach $params.vpnGateways as $gateway}
-                "{$gateway.gateway}"{if !$gateway@last},{/if}
-            {/foreach}
-        ],
-        "tunnelMode": "{$params.tunnelMode}",
-        "loadSharingMethod": {literal}{{/literal}
-            "algo": "",
-            "hashParams": {literal}{{/literal}
-                "srcIp": {if $params.hash.srcIp}true{else}false{/if},
-                "destIp": {if $params.hash.destIp}true{else}false{/if},
-                "srcPort": {if $params.hash.srcPort}true{else}false{/if},
-                "destPort": {if $params.hash.destPort}true{else}false{/if},
-                "protocol": {if $params.hash.protocol}true{else}false{/if}
-            {literal}}{/literal}
-        {literal}}{/literal}
+  "enterpriseId": "{$enterpriseId}",
+  "name": "{$params.name}",
+  "data": {literal}{{/literal}
+    "isServiceEnabled": true,
+    "type": "{$params.gatewaytype}",
+    "vpnGateways": [
+        {foreach $params.vpnGateways as $gateway}
+            "{$gateway.gateway}"{if !$gateway@last},{/if}
+         {/foreach}
+    ],
+    "tunnelMode": "{$params.tunnelMode}",
+    "loadSharingMethod": {literal}{{/literal}
+      "algo": "",
+      "hashParams": {literal}{{/literal}
+        "srcIp": false,
+        "destIp": false,
+        "srcPort": false,
+        "destPort": false,
+        "protocol": false
+      {literal}}{/literal}
+    {literal}}{/literal},
+    "authentication": {literal}{{/literal}
+      "key": "{$params.authkey}",
+      "type": "{$params.authtype}"
+    {literal}}{/literal},
+    "subnets": [
+         {literal}{{/literal}
+            "advertise": true,
+            "cidrIp": "0.0.0.0",
+            "name": "",
+            "cidrPrefix": "32",
+            "netMask": "255.255.255.255",
+            "cidrIpStart": "0.0.0.0",
+            "cidrIpEnd": "0.0.0.0",
+            "nextHop": []
+         {literal}}{/literal}
+    ],
+    "dataCenterPublicIp": "{$params.dataCenterPublicIp}",
+    "ike": {literal}{{/literal}
+      "DHGroup": "{$params.DHGroup}",
+      "sharedKey": "{$params.sharedKey}"
+    {literal}}{/literal},
+    "ipsec": {literal}{{/literal}
+      "sharedKey": "{$params.sharedKey}",
+      "authenticationAlgorithm": "{$params.authenticationAlgorithm}",
+      "encryptionAlgorithm": "{$params.encryptionAlgorithm}",
+      "perfectForwardSecurity": "{$params.perfectForwardSecurity}"
     {literal}}{/literal}
+  {literal}}{/literal}
 {literal}}{/literal}]]></operation>
     <rest>POST</rest>
     <xpath>/portal/rest/vpn/generateVpnGatewayConfiguration</xpath>
   </command>
   <command name="READ"/>
   <command name="UPDATE">
-    <operation><![CDATA[{
-  "id": {$object_id},
-  "enterpriseId": {$enterpriseId},
-  "_update": {
-    "name": "{$params.name}",
-    "type": "{$params.type}",
-    "data": {
-        "isServiceEnabled": true,
-                "subnets": [
-                ]
-    }
-  }
-}]]></operation>
+    <operation><![CDATA[{literal}{{/literal}
+
+    "id": {$params.object_id},
+    "enterpriseId": {$enterpriseId},
+    "_update": {literal}{{/literal}
+
+        "name": "{$params.name}",
+        "type": "dataCenter",
+        "data": {literal}{{/literal}
+			"bgpDisabled": true,
+            "bfdDisabled": true,
+            "isServiceEnabled": true,
+            "tunnelMode": "{$params.tunnelMode}",
+            "loadSharingMethod": {literal}{{/literal}
+
+                "algo": "",
+                "hashParams": {literal}{{/literal}
+
+                    "srcIp": false,
+                    "destIp": false,
+                    "srcPort": false,
+                    "destPort": false,
+                    "protocol": false
+               {literal}}{/literal}
+
+            {literal}}{/literal},
+
+            "dataCenterPublicIp": "",
+            "ike": {literal}{{/literal}
+
+                "DHGroup": {$params.DHGroup},
+                "sharedKey": "{$params.sharedKey}"
+            {literal}}{/literal},
+
+            "ipsec": {literal}{{/literal}
+
+                "sharedKey": "{$params.sharedKey}",
+                "authenticationAlgorithm": "{$params.authenticationAlgorithm}",
+                "encryptionAlgorithm": "{$params.encryptionAlgorithm}",
+                "perfectForwardSecurity": "{$params.perfectForwardSecurity}"
+            {literal}}{/literal},
+
+            "isCDE": false,
+            "aggregation": [],
+            "subnets": [
+                {literal}{{/literal}
+
+                    "name": "",
+                    "cidrIp": "0.0.0.0",
+                    "cidrPrefix": 32,
+                    "netMask": "255.255.255.255",
+                    "cidrIpStart": "0.0.0.0",
+                    "cidrIpEnd": "0.0.0.0",
+                    "nextHop": []
+               {literal}}{/literal}
+
+            ],
+            "authentication": {literal}{{/literal}
+
+                "type": "{$params.authtype}",
+                "key": "{$params.authkey}"
+            {literal}}{/literal},
+
+            "primary": {literal}{{/literal}
+				"gatewayPublicIp": "{$params.primaryGatewayPublicIp}",
+				"dataCenterLinkIp" : "{$params.primaryDataCenterLinkIp}",
+				"gatewayLinkIp": "{$params.primaryGatewayLinkIp}",
+                "dataCenterPublicIp": "{$params.primaryIP}",
+                "redundant": {literal}{{/literal}
+					"gatewayPublicIp": "{$params.primaryGatewayPublicIp}",
+				    "dataCenterLinkIp" : "{$params.primaryDataCenterLinkIp}",
+				    "gatewayLinkIp": "{$params.primaryGatewayLinkIp}",
+                    "dataCenterPublicIp": "{$params.primaryIP}",
+                    "type": "{$params.gatewaytype}",
+                    "typeAlias": "{$params.gatewaytype}",
+                    "disabled": false,
+                    "IKESA": {literal}{{/literal}
+
+                        "ikeVersion": 2,
+                        "ikeId": null,
+                        "ikeInitiator": "both",
+                        "authenticationMethod": "PSK",
+                        "sharedKeyType": "hex",
+                        "sharedKey": "{$params.sharedKey}",
+                        "authenticationAlgorithm": "{$params.authenticationAlgorithm}",
+                        "lifeTimeSeconds": 86400,
+                        "phaseOneNegotiationMode": "main",
+                        "DHGroup": {$params.DHGroup},
+                        "authenticationTimeSeconds": 172800
+                    {literal}}{/literal},
+
+                    "IPSECSA": {literal}{{/literal}
+
+                        "protocol": "ESP",
+                        "authenticationAlgorithm": "{$params.authenticationAlgorithm}",
+                        "encryptionAlgorithm": "{$params.encryptionAlgorithm}",
+                        "lifeTimeSeconds": 28800,
+                        "mode": "tunnel",
+                        "perfectForwardSecurity": "{$params.perfectForwardSecurity}"
+                    {literal}}{/literal},
+
+                    "IPSECDPD": {literal}{{/literal}
+
+                        "type": "onDemand",
+                        "intervalSeconds": 10,
+                        "dpdTimeoutSeconds": 20,
+                        "retries": 3
+                    {literal}}{/literal},
+
+                    "fragmentationAvoidance": {literal}{{/literal}
+
+                        "tcpMssAdjustmentBytes": 1320,
+                        "clearDontFragmentBit": "enabled",
+                        "fragmentationStyle": "Before Encryption / Look Ahead Fragmention"
+                    {literal}}{/literal},
+
+                    "tunnelInterface": {literal}{{/literal}
+
+                        "MTU": 1328
+                   {literal}}{/literal}
+
+                {literal}}{/literal},
+
+                "type": "{$params.gatewaytype}",
+                "typeAlias": "{$params.gatewaytype}",
+                "version": "1772114873566",
+                "disabled": false,
+                "IKESA": {literal}{{/literal}
+
+                    "ikeVersion": 2,
+                    "ikeId": null,
+                    "ikeInitiator": "both",
+                    "authenticationMethod": "PSK",
+                    "sharedKeyType": "hex",
+                    "sharedKey": "{$params.sharedKey}",
+                    "authenticationAlgorithm": "{$params.authenticationAlgorithm}",
+                    "lifeTimeSeconds": 86400,
+                    "phaseOneNegotiationMode": "main",
+                    "DHGroup": {$params.DHGroup},
+                    "authenticationTimeSeconds": 172800
+                {literal}}{/literal},
+
+                "IPSECSA": {literal}{{/literal}
+
+                    "protocol": "ESP",
+                    "authenticationAlgorithm": "{$params.authenticationAlgorithm}",
+                    "encryptionAlgorithm": "{$params.encryptionAlgorithm}",
+                    "lifeTimeSeconds": 28800,
+                    "mode": "tunnel",
+                    "perfectForwardSecurity": "{$params.perfectForwardSecurity}"
+                {literal}}{/literal},
+
+                "IPSECDPD": {literal}{{/literal}
+
+                    "type": "onDemand",
+                    "intervalSeconds": 10,
+                    "dpdTimeoutSeconds": 20,
+                    "retries": 3
+                {literal}}{/literal},
+
+                "fragmentationAvoidance": {literal}{{/literal}
+
+                    "tcpMssAdjustmentBytes": 1320,
+                    "clearDontFragmentBit": "enabled",
+                    "fragmentationStyle": "Before Encryption / Look Ahead Fragmention"
+                {literal}}{/literal},
+
+                "tunnelInterface": {literal}{{/literal}
+
+                    "MTU": 1328
+                {literal}}{/literal},
+
+                "geoData": {literal}{{/literal}
+
+                    "latitude": {$params.primaryGeoDataLatitude},
+                    "longitude": {$params.primaryGeoDataLongitude}
+               {literal}}{/literal}
+
+            {literal}}{/literal},
+
+            "secondary": {literal}{{/literal}
+				"gatewayPublicIp": "{$params.secondaryGatewayPublicIp}",
+				"dataCenterLinkIp" : "{$params.secondaryDataCenterLinkIp}",
+				"gatewayLinkIp": "{$params.secondaryGatewayLinkIp}",
+                "dataCenterPublicIp": "{$params.secondaryIP}",
+                "redundant": {literal}{{/literal}
+					"gatewayPublicIp": "{$params.secondaryGatewayPublicIp}",
+					"dataCenterLinkIp" : "{$params.secondaryDataCenterLinkIp}",
+					"gatewayLinkIp": "{$params.secondaryGatewayLinkIp}",
+                    "dataCenterPublicIp": "{$params.secondaryIP}",
+                    "type": "{$params.gatewaytype}",
+                    "disabled": false,
+                    "IKESA": {literal}{{/literal}
+
+                        "ikeVersion": 2,
+                        "ikeId": null,
+                        "ikeInitiator": "both",
+                        "authenticationMethod": "PSK",
+                        "sharedKeyType": "hex",
+                        "sharedKey": "{$params.sharedKey}",
+                        "authenticationAlgorithm": "{$params.authenticationAlgorithm}",
+                        "lifeTimeSeconds": 86400,
+                        "phaseOneNegotiationMode": "main",
+                        "DHGroup": {$params.DHGroup},
+                        "authenticationTimeSeconds": 172800
+                    {literal}}{/literal},
+
+                    "IPSECSA": {literal}{{/literal}
+
+                        "protocol": "ESP",
+                        "authenticationAlgorithm": "{$params.authenticationAlgorithm}",
+                        "encryptionAlgorithm": "{$params.encryptionAlgorithm}",
+                        "lifeTimeSeconds": 28800,
+                        "mode": "tunnel",
+                        "perfectForwardSecurity": "{$params.perfectForwardSecurity}"
+                    {literal}}{/literal},
+
+                    "IPSECDPD": {literal}{{/literal}
+
+                        "type": "onDemand",
+                        "intervalSeconds": 10,
+                        "dpdTimeoutSeconds": 20,
+                        "retries": 3
+                    {literal}}{/literal},
+
+                    "fragmentationAvoidance": {literal}{{/literal}
+
+                        "tcpMssAdjustmentBytes": 1320,
+                        "clearDontFragmentBit": "enabled",
+                        "fragmentationStyle": "Before Encryption / Look Ahead Fragmention"
+                    {literal}}{/literal},
+
+                    "tunnelInterface": {literal}{{/literal}
+
+                        "MTU": 1328
+                   {literal}}{/literal}
+
+                {literal}}{/literal},
+
+                "type": "{$params.gatewaytype}",
+                "disabled": false,
+                "IKESA": {literal}{{/literal}
+
+                    "ikeVersion": 2,
+                    "ikeId": null,
+                    "ikeInitiator": "both",
+                    "authenticationMethod": "PSK",
+                    "sharedKeyType": "hex",
+                    "sharedKey": "{$params.sharedKey}",
+                    "authenticationAlgorithm": "{$params.authenticationAlgorithm}",
+                    "lifeTimeSeconds": 86400,
+                    "phaseOneNegotiationMode": "main",
+                    "DHGroup": {$params.DHGroup},
+                    "authenticationTimeSeconds": 172800
+                {literal}}{/literal},
+
+                "IPSECSA": {literal}{{/literal}
+
+                    "protocol": "ESP",
+                    "authenticationAlgorithm": "{$params.authenticationAlgorithm}",
+                    "encryptionAlgorithm": "{$params.encryptionAlgorithm}",
+                    "lifeTimeSeconds": 28800,
+                    "mode": "tunnel",
+                    "perfectForwardSecurity": "{$params.perfectForwardSecurity}"
+                {literal}}{/literal},
+
+                "IPSECDPD": {literal}{{/literal}
+
+                    "type": "onDemand",
+                    "intervalSeconds": 10,
+                    "dpdTimeoutSeconds": 20,
+                    "retries": 3
+                {literal}}{/literal},
+
+                "fragmentationAvoidance": {literal}{{/literal}
+
+                    "tcpMssAdjustmentBytes": 1320,
+                    "clearDontFragmentBit": "enabled",
+                    "fragmentationStyle": "Before Encryption / Look Ahead Fragmention"
+                {literal}}{/literal},
+
+                "tunnelInterface": {literal}{{/literal}
+
+                    "MTU": 1328
+                {literal}}{/literal},
+
+                "geoData": {literal}{{/literal}
+
+                    "latitude": {$params.secondaryGeoDataLatitude},
+                    "longitude": {$params.secondaryGeoDataLongitude}
+               {literal}}{/literal}
+
+           {literal}}{/literal}
+
+       {literal}}{/literal}
+
+   {literal}}{/literal}
+
+{literal}}{/literal}]]></operation>
     <rest>POST</rest>
     <xpath>/portal/rest/enterprise/updateEnterpriseService</xpath>
   </command>
@@ -1519,6 +2037,6 @@
     <xpath>/portal/rest/enterprise/deleteEnterpriseService</xpath>
   </command>
   <command name="LIST"/>
-  <displayName>VeloCloudNonSDWDestViaGateway</displayName>
+  <displayName>Non SD-WAN Destinations Via Gateway</displayName>
   <order>0</order>
 </ObjectDefinition>
