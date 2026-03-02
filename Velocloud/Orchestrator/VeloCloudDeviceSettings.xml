@@ -108,7 +108,7 @@
 {literal}}{/literal}
 ]]]></operation>
     <rest>PATCH</rest>
-    <xpath>/api/sdwan/v2/enterprises/{$enterpriseLogicalId}/profiles/{$params.object_id}/deviceSettings</xpath>
+    <xpath>/api/sdwan/v2/enterprises/{$params.enterpriseLogicalId}/profiles/{$params.object_id}/deviceSettings</xpath>
   </command>
   <command name="LIST"/>
   <displayName>VeloCloudEntreprisesProfiles</displayName>
