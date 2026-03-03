@@ -106,7 +106,7 @@
 "op": "remove",
 "path": "/segments/0/vpn/gatewayNonSdwanSites/1"
 {literal}}{/literal}
-]]]></operation>
+]]></operation>
     <rest>PATCH</rest>
     <xpath>/api/sdwan/v2/enterprises/{$params.enterpriseLogicalId}/profiles/{$params.object_id}/deviceSettings</xpath>
   </command>
