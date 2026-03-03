@@ -1871,7 +1871,7 @@
 
                         "tcpMssAdjustmentBytes": 1320,
                         "clearDontFragmentBit": "enabled",
-                        "fragmentationStyle": "Before Encryption / Look Ahead Fragmention"
+                        "fragmentationStyle": "Before Encryption / Look Ahead Fragmentation"
                     {literal}}{/literal},
 
                     "tunnelInterface": {literal}{{/literal}
