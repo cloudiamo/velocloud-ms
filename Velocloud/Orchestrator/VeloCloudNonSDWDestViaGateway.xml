@@ -96,7 +96,7 @@
           <selector>params.authtype</selector>
           <isUniqueGlobal>false</isUniqueGlobal>
         </behaviour>
-        <behaviour arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" editable="false" visible="true" displayName="Auth Key" displayOrder="0" maxLength="100" isMandatory="true" isUserLocked="false" name="params.authkey" selectorValue="IPv4" startIncrement="0" type="String" default=" 10.0.2.5" localVarToFilter="" remoteVarToFilter="" uniqueItemsInDropDownList="false">
+        <behaviour arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" editable="false" visible="true" displayName="Auth Key" displayOrder="0" maxLength="100" isMandatory="true" isUserLocked="false" name="params.authkey" selectorValue="IPv4" startIncrement="0" type="String" default="10.0.2.5" localVarToFilter="" remoteVarToFilter="" uniqueItemsInDropDownList="false">
           <compositeKey>false</compositeKey>
           <codeLanguage></codeLanguage>
           <defaultValueLong/>
