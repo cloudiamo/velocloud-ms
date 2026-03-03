@@ -1721,7 +1721,7 @@
           <xpath>$.data.secondary.gatewayLinkIp</xpath>
         </line>
         <line>
-          <regexp>@^(?&lt;primaryredundantgatewayPublicIp&gt;.*)$@</regexp>
+          <regexp>@^(?&lt;primaryRedundantGatewayPublicIp&gt;.*)$@</regexp>
           <xpath>$.data.primary.redundant.gatewayPublicIp</xpath>
         </line>
         <line>
