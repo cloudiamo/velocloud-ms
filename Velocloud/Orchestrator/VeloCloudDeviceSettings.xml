@@ -15,7 +15,7 @@
     <maxInstances>0</maxInstances>
     <relatedObjects></relatedObjects>
     <retainIfImportIsEmpty>false</retainIfImportIsEmpty>
-    <name>VeloCloudEntreprisesProfiles</name>
+    <name>VeloCloudEnterprisesProfiles</name>
     <group>Default</group>
     <importonce>false</importonce>
     <importrank>0</importrank>
